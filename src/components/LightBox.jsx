@@ -12,7 +12,7 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
         <div className='fixed inset-0 w-full h-full bg-neutral-light z-[1000] overflow-y-scroll lg:overflow-y-hidden'>
             <div className='sticky top-0 flex bg-white h-[70px] justify-between items-center px-4'>
                 <div className='max-w-7xl mx-auto w-full px-4 py-5 flex'>
-                    <div className='flex-1 flex gap-x-4'>
+                    <div className='flex-1 flex gap-x-4'> 
                         <button onClick={onClose} className='flex gap-x-2 items-center text-complement-deep font-medium'><FaArrowLeft className='text-gray-800 text-base'/> Back</button>
                         <div className='flex flex-col'>
                             <p className='text-sm font-medium text-accent-dark'>

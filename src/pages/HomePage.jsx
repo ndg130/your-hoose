@@ -43,14 +43,14 @@ export default function HomePage() {
 
         const fetchProperties = async () => {
             const localEndpoint = 'http://localhost:4005/properties';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/db.json';
+            const liveEndpoint = 'https://ndg130.github.io/your-hoose/properties.json';
             try {
                 const response = await fetch(liveEndpoint);
                 if(!response.ok){
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
-                setProperties(data);
+                setProperties(data.properties);
                 console.log(data);
             } catch (error) {
                 console.error('Failed to fetch properties', error);

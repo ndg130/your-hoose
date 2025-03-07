@@ -28,14 +28,14 @@ export default function PropertyListing() {
     useEffect(() => {
         const fetchProperty = async () => {
             const localEndpoint = 'http://localhost:4005/properties';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/db.json';
+            const liveEndpoint = 'https://ndg130.github.io/your-hoose/properties.json';
             try {
                 const response = await fetch(liveEndpoint);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
-                const findProperty = data.find(property => Number(property.property.id) === Number(id));
+                const findProperty = data.properties.find(property => Number(property.property.id) === Number(id));
     
                 if (findProperty) {
                     setProperty(findProperty);
@@ -55,10 +55,11 @@ export default function PropertyListing() {
         if (!property) return; // Ensure property is loaded first
 
         const fetchEstateAgents = async () => {
-            const endpoint = 'http://localhost:4005/estate-agents';
+            const localEndpoint = 'http://localhost:4005/estate-agents';
+            const liveEndpoint = 'https://ndg130.github.io/your-hoose/estate-agents.json';
             
             try {
-                const response = await fetch(endpoint);
+                const response = await fetch(liveEndpoint);
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
@@ -72,7 +73,7 @@ export default function PropertyListing() {
                 }
         
                 // Use find to match the agent name
-                const agentLookup = data.find(agentObj => 
+                const agentLookup = data["estate-agents"].find(agentObj => 
                     agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
                 );
         
@@ -94,7 +95,7 @@ export default function PropertyListing() {
     return (
     <>
         <div className='flex items-center px-4 py-3 max-w-7xl mx-auto'>
-            <Link to={'/properties'} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
+            <Link to={'/your-hoose/properties'} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
                 <FaArrowLeft className='text-gray-800 text-base'/> Back to listings
             </Link>
         </div> 

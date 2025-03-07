@@ -22,10 +22,10 @@ function App() {
             <Navigation />
             <main className='pb-10'>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/properties" element={<Properties />} />
-                    <Route path="/properties/:id" element={<PropertyListing />} />
-                    <Route path="design-system" element={<DesignSystem />} >
+                    <Route path="/your-hoose" element={<HomePage />} />
+                    <Route path="/your-hoose/properties" element={<Properties />} />
+                    <Route path="/your-hoose/properties/:id" element={<PropertyListing />} />
+                    <Route path="/your-hoose/design-system" element={<DesignSystem />} >
                         <Route path="button" element={<ButtonPage />} />
                     </Route>
                 </Routes>                

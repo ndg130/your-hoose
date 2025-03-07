@@ -63,8 +63,8 @@ export default function Properties() {
 
 
     return (
-        <div className='py-10'>
-            <SimpleHeader headerText="Latest listings for NE39" />
+        <div className='pb-10'>
+            <SimpleHeader headerText="Latest listings for NE39" style="dark" backgroundImage={'https://www.simpsonandbrown.co.uk/files/content/345_rotator1.jpg'}/>
             <div className='max-w-7xl mx-auto px-6 py-10'>
                 {properties.length > 0 ? (
                     <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
@@ -73,7 +73,7 @@ export default function Properties() {
                         ))}
                     </div>
                 ) : (
-                    <p>No properties available</p> // Fallback UI
+                    <p className='text-center'>No properties available</p> // Fallback UI
                 )}
             </div>
         </div>

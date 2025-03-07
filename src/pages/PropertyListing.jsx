@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef, act } from 'react' 
+import { useState, useEffect } from 'react' 
 import Breadcrumbs from '../components/Breadcrumbs'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation, Grid } from 'swiper/modules';
-import { FaBed, FaShower, FaCamera, FaHouse, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
+import { FaBed, FaShower, FaCamera, FaHouse, FaChevronLeft, FaChevronRight, FaArrowLeft } from "react-icons/fa6";
 
 import { MdGridOn } from "react-icons/md";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import PropertyMap from '../components/PropertyMap';
 
 import MoneyFormatter from '../utils/MoneyFormatter';
@@ -93,15 +92,19 @@ export default function PropertyListing() {
 
     return (
     <>
-        <Breadcrumbs items={[{label: 'Home', href: '/'}, {label: 'Properties', href: '/properties'}, {label: 'This page'}]}  style="light" accent={<FaChevronRight size={10} />} />
+        <div className='flex items-center px-4 py-3 max-w-7xl mx-auto'>
+            <Link to={'/properties'} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
+                <FaArrowLeft className='text-gray-800 text-base'/> Back to listings
+            </Link>
+        </div> 
         <div className='propertyListing max-w-7xl mx-auto px-4 md:px-6 py-10 w-full'>
             <div className=''>
                 {property && photoGroup ? (
                     <>
-                    <div className='group relative grid lg:grid-cols-6 md:grid-rows-2 grid-cols-1 max-h-[350px] lg:max-h-[500px] rounded-lg overflow-hidden gap-2'>
-                        <img onClick={() => setLightBoxVisible(true)} className="col-span-4 row-span-2 h-full w-full object-cover" src={`${property.property.details.media[activeImageIndex % property.property.details.media.length].url}`} alt="" />
-                        <img onClick={() => setLightBoxVisible(true)} className="hidden lg:block col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 1) % property.property.details.media.length].url}`} alt="" />
-                        <img onClick={() => setLightBoxVisible(true)} className="hidden lg:block col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 2) % property.property.details.media.length].url}`} alt="" />
+                    <div className='group relative grid md:grid-cols-3 lg:grid-cols-6 md:grid-rows-2 grid-cols-1 grid-rows-1 max-h-[350px] md:max-h-none md:h-[425px] lg:h-[500px] rounded-lg overflow-hidden gap-2'>
+                        <img onClick={() => setLightBoxVisible(true)} className="md:col-span-2 lg:col-span-4 row-span-2 h-full w-full object-cover" src={`${property.property.details.media[activeImageIndex % property.property.details.media.length].url}`} alt="" />
+                        <img onClick={() => setLightBoxVisible(true)} className="hidden md:block md:col-span-1 lg:col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 1) % property.property.details.media.length].url}`} alt="" />
+                        <img onClick={() => setLightBoxVisible(true)} className="hidden md:block md:col-span-1 lg:col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 2) % property.property.details.media.length].url}`} alt="" />
                         <div onClick={() => setLightBoxVisible(true)} className="rounded-lg bg-accent-dark text-accent-light text-xs flex gap-x-5 px-2 py-0.5 items-center bottom-[10px] right-[10px] absolute">
                             <div className='flex items-center gap-x-2'><FaCamera className='text-base'/><span className='pagination-count'>{activeImageIndex + 1} / {property.property.details.media.length}</span></div>
                         </div>

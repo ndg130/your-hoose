@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+import { FaCircleChevronLeft, FaCircleChevronRight, FaArrowLeft } from "react-icons/fa6";
 import { MdOutlineGridView } from "react-icons/md";
+import MoneyFormatter from '../utils/MoneyFormatter';
 export default function LightBox({ property, photoGroup, activeImageIndex, setActiveImageIndex, onClose, onPrevious, onNext }) {
 
     const [galleryVisible, setGalleryVisible] = useState(true);
@@ -9,9 +10,24 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
 
     return (
         <div className='fixed inset-0 w-full h-full bg-neutral-light z-[1000] overflow-y-scroll lg:overflow-y-hidden'>
-            <div className='sticky top-0 flex bg-white h-[70px]'>
-                <div className='max-w-7xl mx-auto px-4 py-5'>
-                    <button onClick={onClose}>Back</button>
+            <div className='sticky top-0 flex bg-white h-[70px] justify-between items-center px-4'>
+                <div className='max-w-7xl mx-auto w-full px-4 py-5 flex'>
+                    <div className='flex-1 flex gap-x-4'>
+                        <button onClick={onClose} className='flex gap-x-2 items-center text-complement-deep font-medium'><FaArrowLeft className='text-gray-800 text-base'/> Back</button>
+                        <div className='flex flex-col'>
+                            <p className='text-sm font-medium text-accent-dark'>
+                                {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
+                                    ? property.property.address.house_name_number + ', ' 
+                                    : "" 
+                                }
+                                {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
+                                {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
+                                {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
+                            </p>
+                            <p className='text-xs text-gray-800'>{<MoneyFormatter amount={property.property.price.amount}/>}</p>
+                        </div>
+                    </div>
+                    <div className='w-10' aria-hidden="true"></div>
                 </div>               
             </div>
             <div className='max-w-3xl mx-auto px-4 lg:hidden shadow-md'>
@@ -74,13 +90,25 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
 LightBox.propTypes = {
     property: PropTypes.shape({
         property: PropTypes.shape({
+            address: PropTypes.shape({
+                county: PropTypes.string,
+                district: PropTypes.string,
+                house_name_number: PropTypes.string,
+                postcode_1: PropTypes.string,
+                postcode_2: PropTypes.string,
+                street_name: PropTypes.string,
+                town: PropTypes.string
+            }),
             details: PropTypes.shape({
                 media: PropTypes.arrayOf(
                     PropTypes.shape({
                         url: PropTypes.string.isRequired,
                     })
                 ).isRequired
-            }).isRequired
+            }).isRequired,
+            price: PropTypes.shape({
+                amount: PropTypes.number.isRequired
+            }),
         }).isRequired
     }).isRequired,
     photoGroup: PropTypes.arrayOf(

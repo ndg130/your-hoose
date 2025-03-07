@@ -12,6 +12,7 @@ import PropertyListing from './pages/PropertyListing';
 
 import HomePage from './pages/HomePage';
 import Properties from './pages/Properties';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
                     </Route>
                 </Routes>                
             </main>
-
+            <Footer />
         </div>
     </>
     )

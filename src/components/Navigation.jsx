@@ -8,7 +8,7 @@ export default function Navigation() {
 
     return (
         <>
-        <div className='bg-white relative px-4 py-4 md:py-6 h-[70px] md:h-[90px] z-20 flex'>
+        <div className='bg-white relative px-4 py-4 md:py-6 h-[70px] md:h-[90px] z-20 flex border-b border-solid border-gray-300'>
             <div className='max-w-7xl mx-auto flex justify-between items-center relative my-auto w-full'>
                 <div className="hidden md:block min-w-10"></div>
                 <div className="absolute left-1/2 -translate-x-1/2 flex justify-center">

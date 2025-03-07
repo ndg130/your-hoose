@@ -27,9 +27,10 @@ export default function PropertyListing() {
 
     useEffect(() => {
         const fetchProperty = async () => {
-            const endpoint = 'http://localhost:4005/properties';
+            const localEndpoint = 'http://localhost:4005/properties';
+            const liveEndpoint = 'https://ndg130.github.io/your-hoose/db.json';
             try {
-                const response = await fetch(endpoint);
+                const response = await fetch(liveEndpoint);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
                 }

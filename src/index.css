@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    h1 {
+      @apply text-4xl md:text-5xl lg:text-6xl;
+    }
+    h2 {
+      @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+    h3 {
+        @apply text-2xl md:text-3xl lg:text-4xl;
+    }
+    h4 {
+        @apply text-xl md:text-2xl lg:text-3xl;
+    }
+    h5 {
+        @apply text-lg md:text-xl lg:text-2xl
+    }
+    h6 {
+        @apply text-md md:text-lg lg:text-xl;
+    }
+    p {
+        @apply text-sm md:text-base lg:text-base;
+    }
+    input {
+        @apply focus-within:outline-complement-medium;
+    }
+    button {
+        @apply focus-within:outline-complement-deep
+    }
+}
+
+@layer components {
+    
+    button.cta {
+        @apply flex items-center justify-center min-w-[150px] rounded-lg px-5 py-4 font-medium duration-150 transition-colors ease-linear;
+
+        &.primary {
+            @apply bg-primary text-accent-dark  hover:bg-accent-dark hover:text-accent-light;
+        }
+        &.secondary {
+            @apply bg-complement-medium text-gray-800 hover:bg-complement-deep hover:text-white;
+        }
+        &.outline {
+            @apply text-accent-dark outline-accent-dark hover:bg-primary;
+        }
+        &.warning {
+            @apply bg-warning text-black hover:bg-warning/80 hover:text-black;
+        }
+        &.danger {
+            @apply bg-danger text-white hover:bg-red-800 hover:text-white;
+        }
+
+    }
+
+    nav.breadcrumbs {
+        &.light {
+            @apply bg-neutral-medium text-neutral-dark;
+            .link {
+                @apply text-accent-dark;
+            }
+            .current-page {
+                @apply text-neutral-dark;
+            }
+        }
+        &.dark {
+            @apply bg-accent-dark text-neutral-light;
+            .link {
+                @apply text-neutral-light;
+            }
+            .current-page {
+                @apply text-primary;
+            }
+        }
+    }
+
+    .header-component {
+        &.light {
+            @apply bg-neutral-light;
+            .subheader {
+                @apply text-complement-deep;
+            }
+            .header {
+                @apply text-accent-dark;
+            }
+            .description {
+                @apply text-neutral-dark;
+            }
+        }
+        &.medium {
+            @apply bg-neutral-medium;
+            .subheader {
+                @apply text-gray-700;
+            }
+            .header {
+                @apply text-accent-dark;
+            }
+            .description {
+                @apply text-neutral-dark;
+            }
+        }
+        &.dark {
+            @apply bg-accent-dark;
+            .subheader {
+                @apply text-complement-soft;
+            }
+            .header {
+                @apply text-accent-light;
+            }
+            .description {
+                @apply text-neutral-light;
+            }
+        }
+    }
+
+}
+
+@layer utilities {
+    .colour-ease {
+        @apply transition-colors ease-linear duration-200;
+    }
+}
+
+.propertyCard .swiper {
+    height: 199px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 25px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-disabled {
+  opacity: 1;
+} 
+
+.swiper-button-next,
+.swiper-button-next.swiper-button-disabled {   
+    height: 100% !important;
+    top: 0 !important;
+    transform: translateY(22px) !important;
+    right: 0 !important;
+    width: 60px !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, transparent, #73BA9B);
+    z-index: 12;
+}
+
+.swiper-button-prev,
+.swiper-button-prev.swiper-button-disabled {   
+    height: 100% !important;
+    top: 0 !important;
+    transform: translateY(22px) !important;
+    left: 0 !important;
+    width: 60px !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, transparent, #73BA9B);
+    z-index: 12;
+}
+
+.swiper-button-next::after {
+    position: relative;
+    right: -10px;
+    color: #F7FDFA;
+}
+
+.swiper-button-prev::after {
+    position: relative;
+    left: -10px;
+    color: #F7FDFA;
+}
+
+.swiper-pagination-property-card {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: fit-content;
+    z-index: 10;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-current,
+.swiper-pagination-total {
+    color: #D5F2E3 !important;
+}
+
+.primary-gradient-bg-left {
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, transparent, #73BA9B);
+}
+
+.primary-gradient-bg-right {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, transparent, #73BA9B);
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    /* temporarily set the background color so we can tell where the map container is positioned */
+    background-color: lightgrey;
+}
+
+/* 
+.propertyListing .swiper .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.propertyListing .swiper-wrapper .swiper-slide:first-of-type {
+    column-span: 4;
+    grid-row: span 2 / span 2;
+} */

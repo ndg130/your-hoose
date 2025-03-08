@@ -93,7 +93,7 @@ export default function PropertyCard({property}) {
                 </div>
             </div>
             <div className='px-5'>
-                <Link to={`/properties/${property.property.id}`}className='p-2 group'>
+                <Link to={`/your-hoose/properties/${property.property.id}`}className='p-2 group'>
                     {property && (
                         <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
                             {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  

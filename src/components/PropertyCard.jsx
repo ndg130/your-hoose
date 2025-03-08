@@ -16,10 +16,11 @@ export default function PropertyCard({property}) {
     useEffect(() => {
 
         const fetchEstateAgents = async () => {
-            const endpoint = 'http://localhost:4005/estate-agents';
+            const localEndpoint = 'http://localhost:4005/estate-agents';
+            const liveEndpoint = 'https://ndg130.github.io/your-hoose/estate-agents.json';
             
             try {
-                const response = await fetch(endpoint);
+                const response = await fetch(liveEndpoint);
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
@@ -33,7 +34,7 @@ export default function PropertyCard({property}) {
                 }
         
                 // Use find to match the agent name
-                const agentLookup = data.find(agentObj => 
+                const agentLookup = data["estate-agents"].find(agentObj => 
                     agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
                 );
         

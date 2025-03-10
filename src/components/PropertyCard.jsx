@@ -9,6 +9,9 @@ import { FaBed, FaShower, FaCamera, FaPhone } from "react-icons/fa6";
 
 
 export default function PropertyCard({property}) {
+
+    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
+
     const paginationRef = useRef(null);
 
     const [estateAgent, setEstateAgent] = useState(null);
@@ -16,15 +19,17 @@ export default function PropertyCard({property}) {
     useEffect(() => {
 
         const fetchEstateAgents = async () => {
-            const localEndpoint = 'http://localhost:4005/estate-agents';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/estate-agents.json';
+            const endpoint = import.meta.env.VITE_API_ESTATE_AGENTS_ENDPOINT;
+
             
             try {
-                const response = await fetch(liveEndpoint);
+                const response = await fetch(endpoint);
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
+                const estateAgentsData = data["estate-agents"] || data; 
+
                 
                 // Ensure property is defined and has agent_ref
                 if (!property || !property.property.agent_ref) {
@@ -34,7 +39,7 @@ export default function PropertyCard({property}) {
                 }
         
                 // Use find to match the agent name
-                const agentLookup = data["estate-agents"].find(agentObj => 
+                const agentLookup = estateAgentsData.find(agentObj => 
                     agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
                 );
         
@@ -51,7 +56,7 @@ export default function PropertyCard({property}) {
 
     return (
         <div className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row mx-6'>
-            <div className='flex flex-col min-w-[265px] max-w-[90vw] md:w-[265px]'>
+            <div className='flex flex-col min-w-[16.563rem] max-w-[90vw] md:w-[16.563rem]'>
                 <div className='relative'>
                     <div className="swiper-pagination-property-card rounded-lg bg-accent-dark text-accent-light text-xs flex gap-x-5 px-2 py-0.5 items-center">
                         <div className='flex items-center gap-x-2'><FaCamera className='text-base'/><span ref={paginationRef} className='pagination-count'></span></div>
@@ -72,7 +77,7 @@ export default function PropertyCard({property}) {
                                 768: { slidesPerView: 1, spaceBetween: 20 },
                                 1024: { slidesPerView: 1, spaceBetween: 20 },
                             }}
-                            className='rounded-tl-lg w-full object-cover group-hover:opacity-75 min-h-[200px] xs:min-h-[250px] sm:min-h-[300px] md:min-h-0'
+                            className='rounded-tl-lg w-full object-cover group-hover:opacity-75 min-h-[12.5rem] xs:min-h-[15.625rem] sm:min-h-[18.75rem] md:min-h-0'
                         >
                             {property.property.details.media.map((media, index) => (
                                 <SwiperSlide
@@ -88,12 +93,12 @@ export default function PropertyCard({property}) {
                     )}
                  
                 </div>
-                <div className='min-h-[70px] flex items-center bg-accent-light/25 text-accent-dark h-full'>
+                <div className='min-h-[4.375rem] flex items-center bg-accent-light/25 text-accent-dark h-full'>
                     <p className='w-full text-xl font-semibold px-3 py-1'>{typeof property.property.price.amount === 'number' ? <MoneyFormatter amount={property.property.price.amount} /> : property.property.price.amount}</p>
                 </div>
             </div>
             <div className='px-5'>
-                <Link to={`/your-hoose/properties/${property.property.id}`}className='p-2 group'>
+                <Link to={`${basePath}/properties/${property.property.id}`}className='p-2 group'>
                     {property && (
                         <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
                             {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
@@ -123,7 +128,7 @@ export default function PropertyCard({property}) {
                 <div className='flex pb-6 items-center gap-x-2'>
                     {estateAgent !== null && (
                         <>
-                        <img src={estateAgent.agent.logo} className='max-h-[40px] max-w-[92px] h-full object-contain'/>
+                        <img src={estateAgent.agent.logo} className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain'/>
                         <div className='flex flex-col ml-5 md:ml-0'>
                             <a className="text-sm font-medium text-accent-dark" href={`tel:${estateAgent.agent.telephone}`}>
                                 <span className='hidden md:block'>{estateAgent.agent.telephone}</span>

@@ -9,8 +9,11 @@ import PropertyMap from '../components/PropertyMap';
 
 import MoneyFormatter from '../utils/MoneyFormatter';
 import LightBox from '../components/LightBox';
+import PropertyListingSkeleton from '../components/Skeletons/PropertyListingSkeleton';
 
 export default function PropertyListing() {
+
+    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
 
     const { id } = useParams();
     const [property, setProperty] = useState(null);
@@ -18,6 +21,7 @@ export default function PropertyListing() {
     const [lightBoxVisible, setLightBoxVisible] = useState(false);
     const [photoGroup, setPhotoGroup] = useState([]);
     const [activeImageIndex, setActiveImageIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
 
 
     const handleNext = () => setActiveImageIndex(prev => (prev + 1) % photoGroup.length);
@@ -27,15 +31,17 @@ export default function PropertyListing() {
 
     useEffect(() => {
         const fetchProperty = async () => {
-            const localEndpoint = 'http://localhost:4005/properties';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/properties.json';
+            const endpoint = import.meta.env.VITE_API_PROPERTIES_ENDPOINT;
+
             try {
-                const response = await fetch(liveEndpoint);
+                const response = await fetch(endpoint);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
-                const findProperty = data.properties.find(property => Number(property.property.id) === Number(id));
+                const propertiesData = data.properties || data; 
+
+                const findProperty = propertiesData.find(property => Number(property.property.id) === Number(id));
     
                 if (findProperty) {
                     setProperty(findProperty);
@@ -45,6 +51,10 @@ export default function PropertyListing() {
                 }
             } catch (error) {
                 console.error(`Failed to fetch properties: ${error.message}`);
+            } finally {
+                setTimeout(() => {
+                    setLoading(false);
+                }, 1000)
             }
         };
     
@@ -55,15 +65,18 @@ export default function PropertyListing() {
         if (!property) return; // Ensure property is loaded first
 
         const fetchEstateAgents = async () => {
-            const localEndpoint = 'http://localhost:4005/estate-agents';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/estate-agents.json';
+            const endpoint = import.meta.env.VITE_API_ESTATE_AGENTS_ENDPOINT;
+
             
             try {
-                const response = await fetch(liveEndpoint);
+                const response = await fetch(endpoint);
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
+                console.log(data);
+                
+                const estateAgentsData = data["estate-agents"] || data; 
                 
                 // Ensure property is defined and has agent_ref
                 if (!property || !property.property.agent_ref) {
@@ -73,7 +86,7 @@ export default function PropertyListing() {
                 }
         
                 // Use find to match the agent name
-                const agentLookup = data["estate-agents"].find(agentObj => 
+                const agentLookup = estateAgentsData.find(agentObj => 
                     agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
                 );
         
@@ -95,15 +108,17 @@ export default function PropertyListing() {
     return (
     <>
         <div className='flex items-center px-4 py-3 max-w-7xl mx-auto'>
-            <Link to={'/your-hoose/properties'} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
+            <Link to={`${basePath}/properties`} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
                 <FaArrowLeft className='text-gray-800 text-base'/> Back to listings
             </Link>
         </div> 
         <div className='propertyListing max-w-7xl mx-auto px-4 md:px-6 py-10 w-full'>
             <div className=''>
-                {property && photoGroup ? (
+                {loading ? (
+                    <PropertyListingSkeleton />
+                ) : property && photoGroup ? (
                     <>
-                    <div className='group relative grid md:grid-cols-3 lg:grid-cols-6 md:grid-rows-2 grid-cols-1 grid-rows-1 max-h-[350px] md:max-h-none md:h-[425px] lg:h-[500px] rounded-lg overflow-hidden gap-2'>
+                    <div className='group relative grid md:grid-cols-3 lg:grid-cols-6 md:grid-rows-2 grid-cols-1 grid-rows-1 max-h-[21.875rem] md:max-h-none md:h-[26.563rem] lg:h-[31.25rem] rounded-lg overflow-hidden gap-2'>
                         <img onClick={() => setLightBoxVisible(true)} className="md:col-span-2 lg:col-span-4 row-span-2 h-full w-full object-cover" src={`${property.property.details.media[activeImageIndex % property.property.details.media.length].url}`} alt="" />
                         <img onClick={() => setLightBoxVisible(true)} className="hidden md:block md:col-span-1 lg:col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 1) % property.property.details.media.length].url}`} alt="" />
                         <img onClick={() => setLightBoxVisible(true)} className="hidden md:block md:col-span-1 lg:col-span-2 row-span-1 h-full w-full object-cover" src={`${property.property.details.media[(activeImageIndex + 2) % property.property.details.media.length].url}`} alt="" />
@@ -111,16 +126,16 @@ export default function PropertyListing() {
                             <div className='flex items-center gap-x-2'><FaCamera className='text-base'/><span className='pagination-count'>{activeImageIndex + 1} / {property.property.details.media.length}</span></div>
                         </div>
                         <div onClick={() => setLightBoxVisible(true)} className='absolute w-full h-full inset-0 z-10 opacity-0 transition-opacity duration-200 ease-linear group-hover:opacity-100'>
-                            <div className='h-full absolute left-0 w-[100px] primary-gradient-bg-left' onClick={(e) => { e.stopPropagation(); handlePrevious(); }}>
+                            <div className='h-full absolute left-0 w-[6.25rem] primary-gradient-bg-left' onClick={(e) => { e.stopPropagation(); handlePrevious(); }}>
                                 <button className="absolute left-[10px] transform -translate-y-1/2 top-1/2"><FaChevronLeft className='text-white text-5xl hover:text-accent-dark transition-colors duration-200 ease-linear' /></button>
                             </div>
-                            <div className='h-full absolute right-0 w-[100px] primary-gradient-bg-right' onClick={(e) => { e.stopPropagation(); handleNext(); }}>
+                            <div className='h-full absolute right-0 w-[6.25rem] primary-gradient-bg-right' onClick={(e) => { e.stopPropagation(); handleNext(); }}>
                                 <button className="absolute right-[10px] transform -translate-y-1/2 top-1/2"><FaChevronRight className='text-white text-5xl hover:text-accent-dark transition-colors duration-200 ease-linear'/></button>                        
                             </div>
                         </div>
                     </div>
                     <div className='flex mt-3 w-full gap-x-5'>
-                        <div className='w-[calc(100%-350px] flex-1'>
+                        <div className='w-[calc(100%-21.875] flex-1'>
                             <h1 className='text-base font-semibold text-accent-dark mb-2'>
                                 {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
                                     ? property.property.address.house_name_number + ', ' 
@@ -139,7 +154,7 @@ export default function PropertyListing() {
                                 </div>
                                 <div className='lg:hidden'>
                                     {estateAgent !== null && (
-                                        <img src={`${estateAgent.agent.logo}`} alt="" className='max-h-[100px] mb-10'/>
+                                        <img src={`${estateAgent.agent.logo}`} alt="" className='max-h-[6.25rem] mb-10'/>
                                     )}
                                     
                                 </div>
@@ -182,7 +197,7 @@ export default function PropertyListing() {
                                 {/* <PropertyMap latitude={51.5074} longitude={-0.1278} />  */}
                             </div>
                         </div>
-                        <aside className='hidden lg:block lg:col-span-2 relative w-[350px]'>
+                        <aside className='hidden lg:block lg:col-span-2 relative w-[21.875rem]'>
                             <div className='sticky top-[10px]'>
                                 <div className='shadow-lg rounded-lg p-4'>
                                     <p className='text-xs text-gray-500 uppercase'>Marketed by</p>
@@ -203,7 +218,7 @@ export default function PropertyListing() {
                                             
                                         </div>
                                         {estateAgent !== null && (
-                                        <img src={estateAgent.agent.logo} className="w-auto max-h-[80px] ml-auto" alt="" />
+                                        <img src={estateAgent.agent.logo} className="w-auto max-h-[5rem] ml-auto" alt="" />
                                         )}
                                         {estateAgent !== null && (
                                         <div className='bg-neutral-medium col-span-2 flex justify-center p-10 rounded-lg mt-5'>

@@ -10,7 +10,7 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
 
     return (
         <div className='fixed inset-0 w-full h-full bg-neutral-light z-[1000] overflow-y-scroll lg:overflow-y-hidden'>
-            <div className='sticky top-0 flex bg-white h-[70px] justify-between items-center px-4'>
+            <div className='sticky top-0 flex bg-white h-[4.375rem] justify-between items-center px-4'>
                 <div className='max-w-7xl mx-auto w-full px-4 py-5 flex'>
                     <div className='flex-1 flex gap-x-4'> 
                         <button onClick={onClose} className='flex gap-x-2 items-center text-complement-deep font-medium'><FaArrowLeft className='text-gray-800 text-base'/> Back</button>
@@ -42,10 +42,10 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
                     ))}
                 </ul>
             </div>
-            <div className='hidden lg:flex h-[calc(100%-70px)]'>
+            <div className='hidden lg:flex h-[calc(100%-4.375rem)]'>
                 {galleryVisible && (
-                    <div className='w-[325px] h-full'>
-                        <div className='h-[40px] flex items-center justify-between px-4'>
+                    <div className='w-[20.313rem] h-full'>
+                        <div className='h-[2.5rem] flex items-center justify-between px-4'>
                             <p className='text-sm flex gap-x-2'><MdOutlineGridView /> Gallery</p>
                             <button onClick={() => setGalleryVisible(false)} className='text-xs text-complement-deep font-semibold'>Hide</button>
                         </div>
@@ -63,7 +63,7 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
                         </ul>
                     </div>                    
                 )}
-                <div className={`${galleryVisible ? 'w-[calc(100vw-325px)]' : 'w-full'} p-[150px] relative`}>
+                <div className={`${galleryVisible ? 'w-[calc(100vw-20.313rem)]' : 'w-full'} p-[9.375rem] relative`}>
                     <button 
                         className={`${galleryVisible ? 'hidden' : 'flex'} items-center justify-center absolute top-[10px] left-[10px] p-4 rounded-lg border border-solid border-complement-medium`}
                         onClick={() => setGalleryVisible(true)}
@@ -71,15 +71,15 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
                         <MdOutlineGridView className='text-lg' />
                     </button>
                     <div className='transform -translate-y-1/2 top-1/2 relative'>
-                        <button className="absolute left-[-75px] transform -translate-y-1/2 top-1/2 group" onClick={onPrevious}><FaCircleChevronLeft className='text-complement-medium text-5xl group-hover:text-complement-deep transition-colors duration-200 ease-linear' /></button>
+                        <button className="absolute left-[-4.688rem] transform -translate-y-1/2 top-1/2 group" onClick={onPrevious}><FaCircleChevronLeft className='text-complement-medium text-5xl group-hover:text-complement-deep transition-colors duration-200 ease-linear' /></button>
                         {photoGroup.length !== 0 && (
                             <div>
-                                <img className="mx-auto max-h-[600px]" src={photoGroup[activeImageIndex].url} alt=""/>
+                                <img className="mx-auto max-h-[37.5rem]" src={photoGroup[activeImageIndex].url} alt=""/>
                                 <p className='text-center text-sm font-medium text-accent-dark mt-2'>{activeImageIndex + 1} of {photoGroup.length}</p>
                             </div>
                             
                         )}
-                        <button className="absolute right-[-75px] transform -translate-y-1/2 top-1/2 group" onClick={onNext}><FaCircleChevronRight className='text-complement-medium text-5xl group-hover:text-complement-deep transition-colors duration-200 ease-linear'/></button>                        
+                        <button className="absolute right-[-4.688rem] transform -translate-y-1/2 top-1/2 group" onClick={onNext}><FaCircleChevronRight className='text-complement-medium text-5xl group-hover:text-complement-deep transition-colors duration-200 ease-linear'/></button>                        
                     </div>
 
                 </div>

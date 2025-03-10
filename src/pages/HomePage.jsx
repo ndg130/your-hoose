@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import SimpleHeader from '../components/SimpleHeader'
 import SearchHeader from '../components/SearchHeader'
 import PropertyCard from '../components/PropertyCard';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
+import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 export default function HomePage() {
 
 
@@ -38,22 +41,30 @@ export default function HomePage() {
     //console.log(media);
 
     const [properties, setProperties] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
 
         const fetchProperties = async () => {
-            const localEndpoint = 'http://localhost:4005/properties';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/properties.json';
+            const endpoint = import.meta.env.VITE_API_PROPERTIES_ENDPOINT;
+
             try {
-                const response = await fetch(liveEndpoint);
+                const response = await fetch(endpoint);
                 if(!response.ok){
                     throw new Error(`Error: ${response.status} ${response.statusText}`);
                 }
                 const data = await response.json();
-                setProperties(data.properties);
+                const propertiesData = data.properties || data; 
+
+                // setTimeout(() => {setProperties(data.properties);}, 2000)
+                setProperties(propertiesData);
                 console.log(data);
             } catch (error) {
                 console.error('Failed to fetch properties', error);
+            } finally {
+                setTimeout(() => {setLoading(false);}, 5000)
+
+                //setLoading(false);
             }
         };
 
@@ -64,10 +75,17 @@ export default function HomePage() {
 
 
     return (
-        <div className='py-10'>
+        <div className='py-10 px-4 lg:px-6'>
             <SearchHeader />
             <div className='max-w-7xl mx-auto px-6 py-10'>
-                {properties.length > 0 ? (
+                {loading ? (
+                    <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
+                        <PropertyCardSkeleton />
+                        <PropertyCardSkeleton />
+                        <PropertyCardSkeleton />
+                    </div>
+                    
+                ) : properties.length > 0 ? (
                     <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
                         {properties.map((property, index) => (
                             <PropertyCard key={index} property={property} />

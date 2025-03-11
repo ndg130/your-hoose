@@ -158,7 +158,7 @@
     right: 0 !important;
     width: 3.75rem !important;
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, transparent, #73BA9B);
+    background: linear-gradient(90deg, transparent, #405f51);
     z-index: 12;
 }
 
@@ -170,7 +170,7 @@
     left: 0 !important;
     width: 3.75rem !important;
     background: rgb(255,255,255);
-    background: linear-gradient(270deg, transparent, #73BA9B);
+    background: linear-gradient(270deg, transparent, #405f51);
     z-index: 12;
 }
 
@@ -204,12 +204,12 @@
 
 .primary-gradient-bg-left {
     background: rgb(255,255,255);
-    background: linear-gradient(270deg, transparent, #73BA9B);
+    background: linear-gradient(270deg, transparent, #405f51);
 }
 
 .primary-gradient-bg-right {
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, transparent, #73BA9B);
+    background: linear-gradient(90deg, transparent, #405f51);
 }
 
 .map-container {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react' 
+import { useState, useEffect, useContext } from 'react' 
 import Breadcrumbs from '../components/Breadcrumbs'
 
 import { FaBed, FaShower, FaCamera, FaHouse, FaChevronLeft, FaChevronRight, FaArrowLeft } from "react-icons/fa6";
@@ -11,11 +11,17 @@ import MoneyFormatter from '../utils/MoneyFormatter';
 import LightBox from '../components/LightBox';
 import PropertyListingSkeleton from '../components/Skeletons/PropertyListingSkeleton';
 
+import { PropertiesContext } from '../context/properties';
+import { EstateAgentsContext } from '../context/estateAgents';
+
 export default function PropertyListing() {
 
     const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
 
     const { id } = useParams();
+    const { properties, loading: propertiesLoading, error: propertiesError } = useContext(PropertiesContext);
+    const { estateAgents, loading: estateAgentsLoading, error: estateAgentsError } = useContext(EstateAgentsContext);
+
     const [property, setProperty] = useState(null);
     const [estateAgent, setEstateAgent] = useState(null);
     const [lightBoxVisible, setLightBoxVisible] = useState(false);
@@ -30,79 +36,30 @@ export default function PropertyListing() {
     
 
     useEffect(() => {
-        const fetchProperty = async () => {
-            const endpoint = import.meta.env.VITE_API_PROPERTIES_ENDPOINT;
 
-            try {
-                const response = await fetch(endpoint);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-                const propertiesData = data.properties || data; 
+        if(properties !== null) {
+            const findProperty = properties.find(property => Number(property.property.id) === Number(id));
+        
+            if (findProperty) {
+                setProperty(findProperty);
+                setPhotoGroup(findProperty.property.details.media || []);
+            } else {
+                console.warn(`Property with ID ${id} not found.`);
+            }            
+        }
 
-                const findProperty = propertiesData.find(property => Number(property.property.id) === Number(id));
-    
-                if (findProperty) {
-                    setProperty(findProperty);
-                    setPhotoGroup(findProperty.property.details.media || []);
-                } else {
-                    console.warn(`Property with ID ${id} not found.`);
-                }
-            } catch (error) {
-                console.error(`Failed to fetch properties: ${error.message}`);
-            } finally {
-                setTimeout(() => {
-                    setLoading(false);
-                }, 1000)
-            }
-        };
-    
-        fetchProperty();
-    }, [id]);
+
+    }, [id, properties])
 
     useEffect(() => {
-        if (!property) return; // Ensure property is loaded first
+        if(property !== null){
+        const agentLookup = estateAgents.find(agentObj => 
+            agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
+        );
 
-        const fetchEstateAgents = async () => {
-            const endpoint = import.meta.env.VITE_API_ESTATE_AGENTS_ENDPOINT;
-
-            
-            try {
-                const response = await fetch(endpoint);
-                if (!response.ok) {
-                    throw new Error(`Error: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-                console.log(data);
-                
-                const estateAgentsData = data["estate-agents"] || data; 
-                
-                // Ensure property is defined and has agent_ref
-                if (!property || !property.property.agent_ref) {
-                    console.log(property)
-                    console.error('Property agent_ref is missing or undefined');
-                    return;
-                }
-        
-                // Use find to match the agent name
-                const agentLookup = estateAgentsData.find(agentObj => 
-                    agentObj.agent.name.toLowerCase() === property.property.agent_ref.toLowerCase()
-                );
-        
-                setEstateAgent(agentLookup);
-
-        
-            } catch (error) {
-                console.error('Error fetching estate agents:', error);
-            }
+        setEstateAgent(agentLookup);
         }
-        fetchEstateAgents();
-
-
-    }, [property]);
-
-
+    }, [property, estateAgents])
 
 
     return (
@@ -114,7 +71,7 @@ export default function PropertyListing() {
         </div> 
         <div className='propertyListing max-w-7xl mx-auto px-4 md:px-6 py-10 w-full'>
             <div className=''>
-                {loading ? (
+                {propertiesLoading && estateAgentsLoading ? (
                     <PropertyListingSkeleton />
                 ) : property && photoGroup ? (
                     <>

@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom"
-import Logo from '../assets/images/yourhoose-logo.png'
+import { Link } from "react-router-dom";
+import Logo from '../assets/images/yourhoose-logo.png';
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
-export default function Navigation() {
 
+export default function Navigation() {
     const [menuVisible, setMenuVisible] = useState(false);
     const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
+
+    const toggleMenu = () => setMenuVisible(!menuVisible);
+
+    const closeMenu = () => setMenuVisible(false);
 
     return (
         <>
@@ -14,12 +18,16 @@ export default function Navigation() {
                 <div className="hidden md:block min-w-10"></div>
                 <div className="absolute left-1/2 -translate-x-1/2 flex justify-center">
                     <Link to={`${basePath}`}>
-                        <img src={Logo}  alt="Logo" className="h-4 sm:h-6"/>
+                        <img src={Logo} alt="Logo" className="h-4 sm:h-6"/>
                     </Link>
                 </div>
                 <div className="flex gap-x-4 ml-auto">
                     <Link className="border-2 border-solid border-accent-dark text-accent-dark hover:text-primary colour-ease cursor-pointer font-medium text-sm px-3 py-1.5 rounded-2xl hidden md:block">Sign In / Register</Link>
-                    <button onClick={() => {setMenuVisible(!menuVisible)}}>
+                    <button 
+                        onClick={toggleMenu} 
+                        aria-expanded={menuVisible ? "true" : "false"} 
+                        aria-label="Toggle menu"
+                    >
                         {!menuVisible ? <HiOutlineMenu className="text-3xl text-accent-dark"/> : <HiX className="text-3xl text-accent-dark"/>}
                     </button>
                 </div>
@@ -38,13 +46,12 @@ export default function Navigation() {
             >
                 <nav>
                     <ul className="flex flex-col gap-y-2">
-                        {/* This will be turned into a Link when Router added to App.js */}
-                        <li><Link to={`${basePath}/properties`}>For sale</Link></li>
-                        <li><Link>To Rent</Link></li>
+                        <li><Link to={`${basePath}/properties`} onClick={closeMenu}>For sale</Link></li>
+                        <li><Link onClick={closeMenu}>To Rent</Link></li>
                     </ul>
                 </nav>
             </div>
         </div>
         </>
-    )
+    );
 }

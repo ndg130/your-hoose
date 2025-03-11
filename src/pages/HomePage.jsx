@@ -1,79 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext} from 'react'
 import SimpleHeader from '../components/SimpleHeader'
 import SearchHeader from '../components/SearchHeader'
 import PropertyCard from '../components/PropertyCard';
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { PropertiesContext } from '../context/properties';
 
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 export default function HomePage() {
 
 
-    let number = 0;
-    let maxNumber = 19;
-    
-    let media = [];
-    
-    for (let i = 0; maxNumber > i; i++) {
-      // Format the index to two digits if it's less than 10
-      let current = (i < 10) ? '0' + i : i;
-    
-      // The provided URL
-      const url = `https://media.rightmove.co.uk/47k/46041/158585573/46041_QRW250046_IMG_00_0000.jpeg`;
-    
-      // Split the URL into three parts based on 'IMG_'
-      const [partOne, partTwoAndThree] = url.split('IMG_');
-      const [partTwo, partThree] = partTwoAndThree.split('_');
-    
-      // Now you can use the dynamic 'current' value as partTwo
-      const updatedUrl = `${partOne}IMG_${current}_${partThree}`;
-    
-      // Create the image object
-      const image = {
-        type: 'image',
-        url: updatedUrl,
-      };
-    
-      // Push the image object into the media array
-      media.push(image);
-    }
-    
-    //console.log(media);
-
-    const [properties, setProperties] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-
-        const fetchProperties = async () => {
-            const endpoint = import.meta.env.VITE_API_PROPERTIES_ENDPOINT;
-
-            try {
-                const response = await fetch(endpoint);
-                if(!response.ok){
-                    throw new Error(`Error: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-                const propertiesData = data.properties || data; 
-
-                // setTimeout(() => {setProperties(data.properties);}, 2000)
-                setProperties(propertiesData);
-                console.log(data);
-            } catch (error) {
-                console.error('Failed to fetch properties', error);
-            } finally {
-                setTimeout(() => {setLoading(false);}, 5000)
-
-                //setLoading(false);
-            }
-        };
-
-        fetchProperties();
-
-    }, [])
-
-
-
+     const { properties, loading, error } = useContext(PropertiesContext);
+ 
     return (
         <div className='py-10 px-4 lg:px-6'>
             <SearchHeader />

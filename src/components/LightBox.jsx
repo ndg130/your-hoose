@@ -14,7 +14,7 @@ export default function LightBox({ property, photoGroup, activeImageIndex, setAc
                 <div className='max-w-7xl mx-auto w-full px-4 py-5 flex'>
                     <div className='flex-1 flex gap-x-4'> 
                         <button onClick={onClose} className='flex gap-x-2 items-center text-complement-deep font-medium'><FaArrowLeft className='text-gray-800 text-base'/> Back</button>
-                        <div className='flex flex-col'>
+                        <div className='hidden md:flex flex-col'>
                             <p className='text-sm font-medium text-accent-dark'>
                                 {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
                                     ? property.property.address.house_name_number + ', ' 

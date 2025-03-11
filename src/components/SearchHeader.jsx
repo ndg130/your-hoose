@@ -1,4 +1,3 @@
-import Button from "./Button"
 export default function SearchHeader() {
   return (
     <section className='flex flex-col items-center gap-y-10 justify-center max-w-5xl mx-auto relative h-fit-content md:h-[25rem] p-4 pt-10'>

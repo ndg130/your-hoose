@@ -1,16 +1,13 @@
-import { useEffect, useState } from 'react'
-import SimpleHeader from '../components/SimpleHeader'
-import SearchHeader from '../components/SearchHeader'
+import { useContext } from 'react';
+import SimpleHeader from '../components/SimpleHeader';
 import PropertyCard from '../components/PropertyCard';
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
+import { PropertiesContext } from '../context/properties';
 
 export default function Properties() {
+    const { properties, loading, error } = useContext(PropertiesContext);
 
-    const [loading, setLoading] = useState(true);
-    const [properties, setProperties] = useState([]);
-    
-
-    let number = 0;
+/*     let number = 0;
     let maxNumber = 19;
     
     let media = [];
@@ -37,58 +34,32 @@ export default function Properties() {
     
       // Push the image object into the media array
       media.push(image);
-    }
-    
-    //console.log(media);
-
-
-    useEffect(() => {
-
-        const fetchProperties = async () => {
-            const endpoint = import.meta.env.VITE_API_PROPERTIES_ENDPOINT;
-        
-            try {
-                const response = await fetch(endpoint);
-                if(!response.ok){
-                    throw new Error(`Error: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-
-                const propertiesData = data.properties || data; 
-
-                setProperties(propertiesData);
-                console.log(data);
-            } catch (error) {
-                console.error('Failed to fetch properties', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchProperties();
-
-    }, [])
-
-
+    } */
 
     return (
         <div className='pb-10'>
-            <SimpleHeader headerText="Latest listings for NE39" style="dark" backgroundImage={'https://www.simpsonandbrown.co.uk/files/content/345_rotator1.jpg'}/>
+            <SimpleHeader 
+                headerText="Latest listings for NE39" 
+                style="dark" 
+                backgroundImage="https://www.simpsonandbrown.co.uk/files/content/345_rotator1.jpg"
+            />
             <div className='max-w-7xl mx-auto px-6 py-10'>
                 {loading ? (
                     <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
                         <PropertyCardSkeleton />
                     </div>
-                ) : properties.length > 0 ? (
+                ) : error ? (
+                    <p className="text-center text-red-500">Failed to load properties: {error}</p>
+                ) : properties?.length > 0 ? (
                     <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
                         {properties.map((property, index) => (
                             <PropertyCard key={index} property={property} />
                         ))}
                     </div>
                 ) : (
-                    <p className='text-center'>No properties available</p> // Fallback UI
+                    <p className='text-center'>No properties available</p>
                 )}
             </div>
         </div>
-    )
+    );
 }

@@ -13,30 +13,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Git for auto-merge
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
       - name: Install Dependencies
         run: npm install
 
       - name: Build Project
         run: npm run build  # Adjust if your build command is different
 
-      - name: Checkout gh-pages branch
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-
-      - name: Merge master into gh-pages
-        run: |
-          git merge origin/master --no-ff --no-edit
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Deploy to gh-pages branch
           folder: dist      # Change to your build output folder
-          clean: true  # Removes old files before deploying new ones
+          clean: true  # <-- This removes old files before deploying new ones
           commit-message: "🚀 Deploy from master"

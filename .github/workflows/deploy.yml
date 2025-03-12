@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master  # Runs when you push to the master branch
+      - dev     # This ensures the workflow runs when pushing to dev or master
 
 jobs:
   build-and-deploy:
@@ -24,5 +25,5 @@ jobs:
         with:
           branch: gh-pages  # Deploy to gh-pages branch
           folder: dist      # Change to your build output folder
-          clean: true  # <-- This removes old files before deploying new ones
+          clean: true  # Removes old files before deploying new ones
           commit-message: "🚀 Deploy from master"

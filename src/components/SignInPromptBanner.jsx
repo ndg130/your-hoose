@@ -20,6 +20,6 @@ export default function SignInPromptBanner() {
             <button className="h-[3rem] bg-white px-3 py-1 flex-nowrap items-center flex w-fit border-2 border-solid border-accent-dark rounded-lg min-w-max hover:bg-primary transition-colors duration-200 ease-linear">
                 <span className="text-sm whitespace-nowrap">Sign in or create an account</span>
             </button>
-        </div>
+        </div> 
     )
 }

@@ -13,6 +13,11 @@ import PropertyListing from './pages/PropertyListing';
 import HomePage from './pages/HomePage';
 import Properties from './pages/Properties';
 import Footer from './components/Footer';
+import AdminDashboard from './pages/AdminDashboard';
+import Dashboard from './pages/Admin/Dashboard';
+import PropertiesDashboard from './pages/Admin/PropertiesDashboard';
+import EstateAgentsDashboard from './pages/Admin/EstateAgentsDashboard';
+import EditProperty from './pages/Admin/EditProperty';
 
 function App() {
     const basename = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
@@ -28,6 +33,12 @@ function App() {
                         <Route path="/properties/:id" element={<PropertyListing />} />
                         <Route path="/design-system" element={<DesignSystem />} >
                             <Route path="button" element={<ButtonPage />} />
+                        </Route>
+                        <Route path="/admin" element={<AdminDashboard />} >
+                            <Route path="dashboard" element={<Dashboard />} />
+                            <Route path="properties" element={<PropertiesDashboard />} />
+                            <Route path="estate-agents" element={<EstateAgentsDashboard />} />
+                            <Route path="edit-property/:id" element={<EditProperty />} />
                         </Route>
                     </Routes>                
                 </main>

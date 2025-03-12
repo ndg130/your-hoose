@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from '../assets/images/yourhoose-logo.png';
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
@@ -7,9 +7,14 @@ export default function Navigation() {
     const [menuVisible, setMenuVisible] = useState(false);
     const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
 
+    const withoutNavbarRoutes = import.meta.env.VITE_WITHOUT_NAVBAR_ROUTES.split(' ');
+    const { pathname } = useLocation();
+
     const toggleMenu = () => setMenuVisible(!menuVisible);
 
     const closeMenu = () => setMenuVisible(false);
+
+    if (withoutNavbarRoutes.some((item)=> pathname.includes(item))) return null;
 
     return (
         <>

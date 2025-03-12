@@ -82,7 +82,7 @@ export default function PropertyCard({property}) {
                             {property.property.details.media.map((media, index) => (
                                 <SwiperSlide
                                     key={index}
-                                    className='bg-orange-600 '
+                                    className='bg-gray-200'
                                 >
                                     <img className="h-full w-full object-cover" src={media.url} alt={`Property image ${index + 1}`} />
                                 </SwiperSlide>

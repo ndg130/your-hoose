@@ -13,26 +13,38 @@ import PropertyListing from './pages/PropertyListing';
 import HomePage from './pages/HomePage';
 import Properties from './pages/Properties';
 import Footer from './components/Footer';
+import AdminDashboard from './pages/AdminDashboard';
+import Dashboard from './pages/Admin/Dashboard';
+import PropertiesDashboard from './pages/Admin/PropertiesDashboard';
+import EstateAgentsDashboard from './pages/Admin/EstateAgentsDashboard';
+import EditProperty from './pages/Admin/EditProperty';
 
 function App() {
+    const basename = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
 
     return (
         <>
-        <div className='h-screen bg-neutral-light font-base overflow-x-hidden'>
-            <Navigation />
-            <main className='pb-10'>
-                <Routes>
-                    <Route path="/your-hoose" element={<HomePage />} />
-                    <Route path="/your-hoose/properties" element={<Properties />} />
-                    <Route path="/your-hoose/properties/:id" element={<PropertyListing />} />
-                    <Route path="/your-hoose/design-system" element={<DesignSystem />} >
-                        <Route path="button" element={<ButtonPage />} />
-                    </Route>
-                </Routes>                
-            </main>
-            <Footer />
-        </div>
-    </>
+            <div className='h-screen bg-neutral-light font-base overflow-x-hidden'>
+                <Navigation />
+                <main className='pb-10'>
+                    <Routes basename={basename}>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/properties" element={<Properties />} />
+                        <Route path="/properties/:id" element={<PropertyListing />} />
+                        <Route path="/design-system" element={<DesignSystem />} >
+                            <Route path="button" element={<ButtonPage />} />
+                        </Route>
+                        <Route path="/admin" element={<AdminDashboard />} >
+                            <Route path="dashboard" element={<Dashboard />} />
+                            <Route path="properties" element={<PropertiesDashboard />} />
+                            <Route path="estate-agents" element={<EstateAgentsDashboard />} />
+                            <Route path="edit-property/:id" element={<EditProperty />} />
+                        </Route>
+                    </Routes>                
+                </main>
+                <Footer />
+            </div>            
+        </>
     )
 }
 

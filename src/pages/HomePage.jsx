@@ -1,81 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext} from 'react'
 import SimpleHeader from '../components/SimpleHeader'
 import SearchHeader from '../components/SearchHeader'
 import PropertyCard from '../components/PropertyCard';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import { PropertiesContext } from '../context/properties';
 
+import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
+import SignInPromptBanner from '../components/SignInPromptBanner';
+import ContentLinkCard from '../components/ContentLinkCard';
 export default function HomePage() {
 
 
-    let number = 0;
-    let maxNumber = 19;
-    
-    let media = [];
-    
-    for (let i = 0; maxNumber > i; i++) {
-      // Format the index to two digits if it's less than 10
-      let current = (i < 10) ? '0' + i : i;
-    
-      // The provided URL
-      const url = `https://media.rightmove.co.uk/47k/46041/158585573/46041_QRW250046_IMG_00_0000.jpeg`;
-    
-      // Split the URL into three parts based on 'IMG_'
-      const [partOne, partTwoAndThree] = url.split('IMG_');
-      const [partTwo, partThree] = partTwoAndThree.split('_');
-    
-      // Now you can use the dynamic 'current' value as partTwo
-      const updatedUrl = `${partOne}IMG_${current}_${partThree}`;
-    
-      // Create the image object
-      const image = {
-        type: 'image',
-        url: updatedUrl,
-      };
-    
-      // Push the image object into the media array
-      media.push(image);
-    }
-    
-    //console.log(media);
-
-    const [properties, setProperties] = useState([]);
-
-    useEffect(() => {
-
-        const fetchProperties = async () => {
-            const localEndpoint = 'http://localhost:4005/properties';
-            const liveEndpoint = 'https://ndg130.github.io/your-hoose/properties.json';
-            try {
-                const response = await fetch(liveEndpoint);
-                if(!response.ok){
-                    throw new Error(`Error: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-                setProperties(data.properties);
-                console.log(data);
-            } catch (error) {
-                console.error('Failed to fetch properties', error);
-            }
-        };
-
-        fetchProperties();
-
-    }, [])
-
-
-
+     const { properties, loading, error } = useContext(PropertiesContext);
+ 
     return (
-        <div className='py-10'>
+        <div className='py-10 px-4 lg:px-6'>
             <SearchHeader />
-            <div className='max-w-7xl mx-auto px-6 py-10'>
-                {properties.length > 0 ? (
-                    <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
-                        {properties.map((property, index) => (
-                            <PropertyCard key={index} property={property} />
-                        ))}
-                    </div>
-                ) : (
-                    <p>No properties available</p> // Fallback UI
-                )}
+            <SignInPromptBanner />
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-5 max-w-7xl mx-auto'>
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="Sold house prices" 
+                    description="Check what a home sold for plus photos, floorplans and local area insights."
+                    linkText="Search house prices"
+                    image="https://media.rightmove.co.uk/sold-prices-pod-image.jpeg"
+                />
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="What are the current UK mortgage rates?" 
+                    description="Check the average 2 and 5-year fixed rates for a range of deposit sizes."
+                    linkText="Take a look"
+                    image="https://www.rightmove.co.uk/news/content/uploads/2025/02/HadleighTownhousesResized-740x400.jpg"
+                />
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="10 mistakes adding £100s to your energy bill" 
+                    description="Simple changes and tips that could save you money."
+                    linkText="Take a look"
+                    image="https://www.rightmove.co.uk/news/content/uploads/2024/10/HeroAdobeStock-740x400.jpg"
+                />
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
 
-    const withoutFooterRoutes = ["/dashboard"];
+    const withoutFooterRoutes = import.meta.env.VITE_WITHOUT_NAVBAR_ROUTES.split(' ');
     const { pathname } = useLocation();
 
     if (withoutFooterRoutes.some((item)=> pathname.includes(item))) return null;

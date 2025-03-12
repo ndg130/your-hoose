@@ -7,6 +7,8 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import { PropertiesContext } from '../context/properties';
 
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
+import SignInPromptBanner from '../components/SignInPromptBanner';
+import ContentLinkCard from '../components/ContentLinkCard';
 export default function HomePage() {
 
 
@@ -15,23 +17,29 @@ export default function HomePage() {
     return (
         <div className='py-10 px-4 lg:px-6'>
             <SearchHeader />
-            <div className='max-w-7xl mx-auto px-6 py-10'>
-                {loading ? (
-                    <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
-                        <PropertyCardSkeleton />
-                        <PropertyCardSkeleton />
-                        <PropertyCardSkeleton />
-                    </div>
-                    
-                ) : properties.length > 0 ? (
-                    <div className='flex flex-col gap-y-5 max-w-3xl items-center justify-center mx-auto'>
-                        {properties.map((property, index) => (
-                            <PropertyCard key={index} property={property} />
-                        ))}
-                    </div>
-                ) : (
-                    <p>No properties available</p> // Fallback UI
-                )}
+            <SignInPromptBanner />
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-5 max-w-7xl mx-auto'>
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="Sold house prices" 
+                    description="Check what a home sold for plus photos, floorplans and local area insights."
+                    linkText="Search house prices"
+                    image="https://media.rightmove.co.uk/sold-prices-pod-image.jpeg"
+                />
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="What are the current UK mortgage rates?" 
+                    description="Check the average 2 and 5-year fixed rates for a range of deposit sizes."
+                    linkText="Take a look"
+                    image="https://www.rightmove.co.uk/news/content/uploads/2025/02/HadleighTownhousesResized-740x400.jpg"
+                />
+                <ContentLinkCard 
+                    to={"/"} 
+                    header="10 mistakes adding £100s to your energy bill" 
+                    description="Simple changes and tips that could save you money."
+                    linkText="Take a look"
+                    image="https://www.rightmove.co.uk/news/content/uploads/2024/10/HeroAdobeStock-740x400.jpg"
+                />
             </div>
         </div>
     )

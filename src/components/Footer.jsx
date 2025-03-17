@@ -10,7 +10,7 @@ export default function Footer() {
 
 
     return (
-        <footer className="bg-primary text-accent-dark">
+        <footer className="bg-primaryyy bg-red-500 text-accent-dark">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:py-16 lg:px-8">
                 <nav className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
                 <Link to="/" className="text-accent-dark hover:text-complement-deep">Home</Link>

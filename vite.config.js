@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: mode === 'production' ? '/your-hoose/' : '/',
+  build: {
+    outDir: 'dist', // Ensure everything is output to 'dist' folder
+  },
   server: {
     hmr: true,
   },

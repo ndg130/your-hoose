@@ -3,7 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Runs when you push to the master branch
+      - master  # Runs on direct pushes and merges into master
+  pull_request:
+    branches:
+      - master
+    types:
+      - closed  # Runs when a pull request is merged into master
 
 jobs:
   build-and-deploy:
@@ -13,30 +18,22 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Git for auto-merge
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
       - name: Install Dependencies
         run: npm install
 
       - name: Build Project
-        run: npm run build  # Adjust if your build command is different
+        run: npm run build  # Ensure this matches your build command
 
-      - name: Checkout gh-pages branch
+      - name: Move Build Files to Root
         run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
+          rm -rf .gitignore .github
+          mv dist/* .  # Move built files to root
+          rm -rf dist  # Remove the now-empty dist folder
 
-      - name: Merge master into gh-pages
+      - name: Commit and Push Changes
         run: |
-          git merge origin/master --no-ff --no-edit
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages  # Deploy to gh-pages branch
-          folder: dist      # Change to your build output folder
-          clean: true  # Removes old files before deploying new ones
-          commit-message: "🚀 Deploy from master"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "🚀 Deploy to GitHub Pages"
+          git push

@@ -1,5 +1,6 @@
 {
   "name": "design-system",
+  "homepage": "https://ndg130.github.io/your-hoose/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +11,7 @@
     "preview": "vite preview",
     "database": "json-server --watch ./public/database.json --port 4005",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "master -d dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",

@@ -5,7 +5,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import Sidebar from '../../components/Admin/Sidebar';
 
 
-export default function EditProperty() {
+export default function AddProperty() {
     const navigate = useNavigate(); 
     const { id } = useParams();
     const { properties, fetchProperties, setProperties, loading, error } = useContext(PropertiesContext);
@@ -83,12 +83,26 @@ export default function EditProperty() {
         const handleChange = (e) => {
             const { name, value } = e.target;
             console.log(e.target.name);
+            console.log(e.target.value)
 
-            // If it's a non-nested property
-            setFormData((prev) => ({
-                ...prev,
-                [name]: value,
-            }));
+            // Check if it's a nested field (like address, details, or price)
+            if (name.includes(".")) {
+                const [parent, child] = name.split(".");
+                setFormData((prevState) => ({
+                    ...prevState,
+                    [parent]: {
+                        ...prevState[parent],
+                        [child]: value,
+                    },
+                }));
+            } else {
+                setFormData((prevState) => ({
+                    ...prevState,
+                    [name]: value,
+                }));
+            }
+
+            console.log(formData);
             
         };
     
@@ -195,7 +209,7 @@ export default function EditProperty() {
             <div className='flex-1 lg:ml-72 max-w-2xl sm:max-w-5xl lg:max-w-7xl w-full h-full py-10 px-4'>
                     <div className="sm:flex sm:items-center">
                         <div className="sm:flex-auto">
-                            <h1 className="text-3xl font-semibold text-theme-900">Edit property{id ? ' #'+id : '' }</h1>
+                            <h1 className="text-3xl font-semibold text-theme-900">Add property{id ? ' #'+id : '' }</h1>
                         </div>
                         <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none flex gap-x-3 items-center">
                             <Link to={`/dashboard/products`} type="button" className="block rounded-md bg-theme-100 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-theme-500/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Cancel</Link>

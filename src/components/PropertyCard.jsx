@@ -55,8 +55,14 @@ export default function PropertyCard({property}) {
     }, [property])
 
     return (
-        <div className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row mx-6'>
-            <div className='flex flex-col min-w-[16.563rem] max-w-[90vw] md:w-[16.563rem]'>
+        <div 
+            className='propertyCard bg-white rounded-lg shadow-lg flex flex-col lg:flex-row'
+            price={property.property.price.amount}
+            bedrooms={property.property.details.bedrooms}
+            bathrooms={property.property.details.bathrooms}
+
+        >
+            <div className='flex flex-col min-w-[16.563rem] max-w-[90vw] lg:w-[16.563rem]'>
                 <div className='relative'>
                     <div className="swiper-pagination-property-card rounded-lg bg-accent-dark text-accent-light text-xs flex gap-x-5 px-2 py-0.5 items-center">
                         <div className='flex items-center gap-x-2'><FaCamera className='text-base'/><span ref={paginationRef} className='pagination-count'></span></div>
@@ -77,7 +83,7 @@ export default function PropertyCard({property}) {
                                 768: { slidesPerView: 1, spaceBetween: 20 },
                                 1024: { slidesPerView: 1, spaceBetween: 20 },
                             }}
-                            className='rounded-tl-lg w-full object-cover group-hover:opacity-75 min-h-[12.5rem] xs:min-h-[15.625rem] sm:min-h-[18.75rem] md:min-h-0'
+                            className='rounded-tl-lg w-full object-cover group-hover:opacity-75 min-h-[12.5rem] xs:min-h-[15.625rem] sm:min-h-[18.75rem] lg:min-h-0'
                         >
                             {property.property.details.media.map((media, index) => (
                                 <SwiperSlide
@@ -93,7 +99,7 @@ export default function PropertyCard({property}) {
                     )}
                  
                 </div>
-                <div className='min-h-[4.375rem] flex items-center bg-accent-light/25 text-accent-dark h-full'>
+                <div className='min-h-[4.375rem] flex items-center bg-primary/25 text-accent-dark h-full'>
                     <p className='w-full text-xl font-semibold px-3 py-1'>{typeof property.property.price.amount === 'number' ? <MoneyFormatter amount={property.property.price.amount} /> : property.property.price.amount}</p>
                 </div>
             </div>
@@ -122,19 +128,19 @@ export default function PropertyCard({property}) {
                         {property && property.property.details.status !== 'Available' && (
                             <p className='flex text-sm mb-2 bg-primary text-accent-dark font-semibold w-fit px-3 py-0.5 rounded-lg'>{property.property.details.status}</p>
                         )}
-                        <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date} <span className='hidden md:inline'>by {property.property.agent_ref}</span></p>
+                        <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date} <span className='hidden lg:inline'>by {property.property.agent_ref}</span></p>
                     </div>
                 </Link>
                 <div className='flex pb-6 items-center gap-x-2'>
                     {estateAgent !== null && (
                         <>
                         <img src={estateAgent.agent.logo} className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain'/>
-                        <div className='flex flex-col ml-5 md:ml-0'>
+                        <div className='flex flex-col ml-5 lg:ml-0'>
                             <a className="text-sm font-medium text-accent-dark" href={`tel:${estateAgent.agent.telephone}`}>
-                                <span className='hidden md:block'>{estateAgent.agent.telephone}</span>
-                                <span className='flex md:hidden text-base gap-x-2'><FaPhone className='text-lg md:hidden'/> Call</span>
+                                <span className='hidden lg:block'>{estateAgent.agent.telephone}</span>
+                                <span className='flex lg:hidden text-base gap-x-2'><FaPhone className='text-lg lg:hidden'/> Call</span>
                             </a>
-                            <p className="text-xs font-medium text-gray-600 hidden md:block">Local call rate</p>
+                            <p className="text-xs font-medium text-gray-600 hidden lg:block">Local call rate</p>
                         </div>
                         </>
                     )}

@@ -5,7 +5,6 @@ import { FaBed, FaShower, FaCamera, FaHouse, FaChevronLeft, FaChevronRight, FaAr
 
 import { MdGridOn } from "react-icons/md";
 import { Link, useParams } from 'react-router-dom';
-import PropertyMap from '../components/PropertyMap';
 
 import MoneyFormatter from '../utils/MoneyFormatter';
 import LightBox from '../components/LightBox';
@@ -151,7 +150,7 @@ export default function PropertyListing() {
                             </div>
 
                             <div>
-                                {/* <PropertyMap latitude={51.5074} longitude={-0.1278} />  */}
+                              
                             </div>
                         </div>
                         <aside className='hidden lg:block lg:col-span-2 relative w-[21.875rem]'>

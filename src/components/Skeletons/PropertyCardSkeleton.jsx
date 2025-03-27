@@ -10,7 +10,7 @@ export default function PropertyCard() {
 
 
     return (
-        <div className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row mx-6 w-full'>
+        <div className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full'>
             <div className='flex flex-col min-w-[16.563rem] max-w-[90vw] md:w-[16.563rem]'>
                 <div className='relative'>
                     <div>

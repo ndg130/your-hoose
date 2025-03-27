@@ -18,6 +18,7 @@ import Dashboard from './pages/Admin/Dashboard';
 import PropertiesDashboard from './pages/Admin/PropertiesDashboard';
 import EstateAgentsDashboard from './pages/Admin/EstateAgentsDashboard';
 import EditProperty from './pages/Admin/EditProperty';
+import AddProperty from './pages/Admin/AddProperty';
 
 function App() {
     const basename = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
@@ -39,6 +40,7 @@ function App() {
                             <Route path="properties" element={<PropertiesDashboard />} />
                             <Route path="estate-agents" element={<EstateAgentsDashboard />} />
                             <Route path="edit-property/:id" element={<EditProperty />} />
+                            <Route path="add-property" element={<AddProperty />} />
                         </Route>
                     </Routes>                
                 </main>

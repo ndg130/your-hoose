@@ -27,7 +27,7 @@ export default function Navigation() {
                     </Link>
                 </div>
                 <div className="flex gap-x-4 ml-auto">
-                    <Link className="border-2 border-solid border-accent-dark text-accent-dark hover:text-primary colour-ease cursor-pointer font-medium text-sm px-3 py-1.5 rounded-2xl hidden md:block">Sign In / Register</Link>
+                    <Link to={'/login'}className="border-2 border-solid border-accent-dark text-accent-dark hover:text-primary colour-ease cursor-pointer font-medium text-sm px-3 py-1.5 rounded-2xl hidden md:block">Sign In / Register</Link>
                     <button 
                         onClick={toggleMenu} 
                         aria-expanded={menuVisible ? "true" : "false"} 
@@ -52,7 +52,7 @@ export default function Navigation() {
                 <nav>
                     <ul className="flex flex-col gap-y-2">
                         <li><Link to={`${basePath}/properties`} onClick={closeMenu}>For sale</Link></li>
-                        <li><Link onClick={closeMenu}>To Rent</Link></li>
+                        <li><Link onClick={closeMenu}>To rent</Link></li>
                     </ul>
                 </nav>
             </div>

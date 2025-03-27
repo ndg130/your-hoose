@@ -56,13 +56,13 @@ export default function PropertyCard({property}) {
 
     return (
         <div 
-            className='propertyCard bg-white rounded-lg shadow-lg flex flex-col lg:flex-row'
+            className='propertyCard bg-white rounded-lg border border-solid border-accent-dark flex flex-col lg:flex-row'
             price={property.property.price.amount}
             bedrooms={property.property.details.bedrooms}
             bathrooms={property.property.details.bathrooms}
 
         >
-            <div className='flex flex-col min-w-[16.563rem] max-w-[90vw] lg:w-[16.563rem]'>
+            <div className='flex flex-col min-w-[16.563rem] lg:w-[16.563rem]'>
                 <div className='relative'>
                     <div className="swiper-pagination-property-card rounded-lg bg-accent-dark text-accent-light text-xs flex gap-x-5 px-2 py-0.5 items-center">
                         <div className='flex items-center gap-x-2'><FaCamera className='text-base'/><span ref={paginationRef} className='pagination-count'></span></div>
@@ -106,15 +106,21 @@ export default function PropertyCard({property}) {
             <div className='px-5'>
                 <Link to={`${basePath}/properties/${property.property.id}`}className='p-2 group'>
                     {property && (
-                        <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
-                            {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
-                                ? property.property.address.house_name_number + ', ' 
-                                : "" 
-                            }
-                            {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
-                            {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
-                            {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
-                        </address>                    
+                        <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center'>
+                            <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
+                                {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
+                                    ? property.property.address.house_name_number + ', ' 
+                                    : "" 
+                                }
+                                {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
+                                {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
+                                {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
+                            </address>
+                            {property && property.property.details.status !== 'Available' && (
+                                <p className='flex text-sm bg-primary text-accent-dark font-semibold w-fit px-3 py-0.5 rounded-lg'>{property.property.details.status}</p>
+                            )}                          
+                        </div>
+                  
                     )}
                     <div className='flex gap-x-4 my-1.5'>
                         <span className='text-sm'>{property.property.details.property_type}</span>
@@ -125,9 +131,6 @@ export default function PropertyCard({property}) {
                         <p className='line-clamp-4 text-xs text-gray-600'>{property.property.details.description}</p>
                     </div>
                     <div>
-                        {property && property.property.details.status !== 'Available' && (
-                            <p className='flex text-sm mb-2 bg-primary text-accent-dark font-semibold w-fit px-3 py-0.5 rounded-lg'>{property.property.details.status}</p>
-                        )}
                         <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date} <span className='hidden lg:inline'>by {property.property.agent_ref}</span></p>
                     </div>
                 </Link>

@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className='py-10 px-4 lg:px-6'>
             <SearchHeader />
             <SignInPromptBanner />
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-5 max-w-7xl mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 max-w-7xl mx-auto'>
                 <ContentLinkCard 
                     to={"/"} 
                     header="Sold house prices" 

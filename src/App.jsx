@@ -2,8 +2,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './App.css'
-import { Route, Routes } from 'react-router-dom';
 
+import { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Navigation from './components/Navigation'
 import DesignSystem from './pages/DesignSystem'
@@ -19,10 +20,19 @@ import PropertiesDashboard from './pages/Admin/PropertiesDashboard';
 import EstateAgentsDashboard from './pages/Admin/EstateAgentsDashboard';
 import EditProperty from './pages/Admin/EditProperty';
 import AddProperty from './pages/Admin/AddProperty';
+import NotFound from './pages/NotFound';
+import DummyPage from './pages/DummyPage';
+import Login from './pages/User/Login';
 
 function App() {
     const basename = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
-    console.log(basename);
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        console.log('scrolling')
+    }, [pathname]);
+
     return (
         <>
             <div className='h-screen bg-neutral-light font-base overflow-x-hidden'>
@@ -32,9 +42,11 @@ function App() {
                         <Route path="/" element={<HomePage />} />
                         <Route path="/properties" element={<Properties />} />
                         <Route path="/properties/:id" element={<PropertyListing />} />
+                        <Route path="/hold" element={<DummyPage />} />
                         <Route path="/design-system" element={<DesignSystem />} >
                             <Route path="button" element={<ButtonPage />} />
                         </Route>
+                        <Route path="login" element={<Login />} />
                         <Route path="/admin" element={<AdminDashboard />} >
                             <Route path="dashboard" element={<Dashboard />} />
                             <Route path="properties" element={<PropertiesDashboard />} />
@@ -42,6 +54,7 @@ function App() {
                             <Route path="edit-property/:id" element={<EditProperty />} />
                             <Route path="add-property" element={<AddProperty />} />
                         </Route>
+                        <Route path="*" element={<NotFound />} />
                     </Routes>                
                 </main>
                 <Footer />

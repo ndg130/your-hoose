@@ -80,23 +80,23 @@ export default function Properties() {
             />
             <div className='max-w-7xl mx-auto lg:px-6 pt-0 pb-10 lg:py-10 flex flex-col lg:flex-row relative gap-x-6'>
             {loading ? (
-                <div className='flex flex-col gap-y-5 max-w-5xl flex-1'>
+                <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-6 lg:px-0'>
                     <p>Loading properties...</p>
                     <PropertyCardSkeleton />
                     <PropertyCardSkeleton />
                     <PropertyCardSkeleton />
                 </div>
             ) : error ? (
-                <p className="text-center text-red-500 max-w-5xl flex-1">Failed to load properties: {error}</p>
+                <p className="text-center text-red-500 max-w-5xl flex-1 px-4 lg:px-0">Failed to load properties: {error}</p>
             ) : filteredProperties.length > 0 ? (
-                <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-6 lg:px-0'>
-                    <p>Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}</p>
+                <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
+                    <p className='sticky top-0 left-0 w-full bg-neutral-light py-3 z-50'>Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}</p>
                     {filteredProperties.map((property) => (
                         <PropertyCard key={property.id} property={property} />
                     ))}
                 </div>
             ) : (
-                <p className='text-left max-w-5xl flex-1'>No properties match your filters</p>
+                <p className='text-left max-w-5xl flex-1 px-6 lg:px-0'>No properties match your filters</p>
             )}
                 <div className={`order-first lg:order-last p-4 mb-5 bg-white lg:min-w-[250px] lg:w-[250px] shadow-md w-full z-50 sticky top-0 left-0 lg:h-screen`}>
 

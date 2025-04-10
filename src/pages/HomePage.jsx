@@ -20,21 +20,21 @@ export default function HomePage() {
             <SignInPromptBanner />
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 max-w-7xl mx-auto'>
                 <ContentLinkCard 
-                    to={"/"} 
+                    to={"/hold"} 
                     header="Sold house prices" 
                     description="Check what a home sold for plus photos, floorplans and local area insights."
                     linkText="Search house prices"
                     image="https://media.rightmove.co.uk/sold-prices-pod-image.jpeg"
                 />
                 <ContentLinkCard 
-                    to={"/"} 
+                    to={"/hold"} 
                     header="What are the current UK mortgage rates?" 
                     description="Check the average 2 and 5-year fixed rates for a range of deposit sizes."
                     linkText="Take a look"
                     image="https://www.rightmove.co.uk/news/content/uploads/2025/02/HadleighTownhousesResized-740x400.jpg"
                 />
                 <ContentLinkCard 
-                    to={"/"} 
+                    to={"/hold"} 
                     header="10 mistakes adding £100s to your energy bill" 
                     description="Simple changes and tips that could save you money."
                     linkText="Take a look"

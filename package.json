@@ -10,7 +10,7 @@
         "build:gh": "vite build --mode production",
         "lint": "eslint .",
         "preview": "vite preview",
-        "database": "json-server --watch ./public/db.json --port 4005",
+        "database": "concurrently \"json-server --watch ./public/data/properties.json --port 4005\" \"json-server --watch ./public/data/estate-agents.json --port 4006\"",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
     },
@@ -33,6 +33,7 @@
         "@types/react-dom": "^19.0.4",
         "@vitejs/plugin-react": "^4.3.4",
         "autoprefixer": "^10.4.21",
+        "concurrently": "^9.1.2",
         "eslint": "^9.21.0",
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-react-hooks": "^5.0.0",

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa6";
 export default function ContentLinkCard({ to, image, header, description, linkText }) {
   return (
-    <Link to={to} className='flex flex-row md:flex-col rounded-lg shadow-md overflow-hidden group hover:ring-2 hover:ring-solid hover:ring-complement-deep ring-inside'>
+    <Link to={to} className='flex flex-row md:flex-col justify-between rounded-lg shadow-md overflow-hidden group hover:ring-2 hover:ring-solid hover:ring-complement-deep ring-inside'>
         {image && (
             <img className="hidden md:block h-[10rem] lg:h-[12rem] object-cover" src={image} alt="" />            
         )}

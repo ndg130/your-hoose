@@ -10,8 +10,6 @@ import { FaBed, FaShower, FaCamera, FaPhone } from "react-icons/fa6";
 
 export default function AdminPropertyCard({property}) {
 
-    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
-
     const paginationRef = useRef(null);
 
     const [estateAgent, setEstateAgent] = useState(null);
@@ -55,7 +53,7 @@ export default function AdminPropertyCard({property}) {
     }, [property])
 
     return (
-        <Link to={`${basePath}/admin/edit-property/${property.property.id}`} className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row mx-6 overflow-hidden'>
+        <Link to={`/admin/edit-property/${property.property.id}`} className='propertyCard bg-white rounded-lg shadow-lg flex flex-col md:flex-row mx-6 overflow-hidden'>
             <div className='flex flex-col max-w-[150px] aspect-square'>
                 <div className='relative h-full w-full'>
                     {property?.property?.details?.media?.length > 0 ? (
@@ -67,7 +65,7 @@ export default function AdminPropertyCard({property}) {
                 </div>
             </div>
             <div className='px-5'>
-                <div to={`${basePath}/properties/${property.property.id}`} className='p-2 group'>
+                <div to={`/properties/${property.property.id}`} className='p-2 group'>
                     {property && (
                         <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
                             {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  

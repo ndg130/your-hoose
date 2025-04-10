@@ -10,8 +10,6 @@ import { FaBed, FaShower, FaCamera, FaPhone } from "react-icons/fa6";
 
 export default function PropertyCard({property}) {
 
-    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
-
     const paginationRef = useRef(null);
 
     const [estateAgent, setEstateAgent] = useState(null);
@@ -104,7 +102,7 @@ export default function PropertyCard({property}) {
                 </div>
             </div>
             <div className='px-5'>
-                <Link to={`${basePath}/properties/${property.property.id}`}className='p-2 group'>
+                <Link to={`/properties/${property.property.id}`}className='p-2 group'>
                     {property && (
                         <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center'>
                             <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>

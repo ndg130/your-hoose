@@ -15,8 +15,6 @@ import { EstateAgentsContext } from '../context/estateAgents';
 
 export default function PropertyListing() {
 
-    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
-
     const { id } = useParams();
     const { properties, loading: propertiesLoading, error: propertiesError } = useContext(PropertiesContext);
     const { estateAgents, loading: estateAgentsLoading, error: estateAgentsError } = useContext(EstateAgentsContext);
@@ -64,7 +62,7 @@ export default function PropertyListing() {
     return (
     <>
         <div className='flex items-center px-4 py-3 max-w-7xl mx-auto'>
-            <Link to={`${basePath}/properties`} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
+            <Link to={`/properties`} className='flex gap-x-2 items-center text-complement-deep text-sm font-medium hover:underline'>
                 <FaArrowLeft className='text-gray-800 text-base'/> Back to listings
             </Link>
         </div> 

@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export default function Navigation() {
     const [menuVisible, setMenuVisible] = useState(false);
-    const basePath = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
 
     const withoutNavbarRoutes = import.meta.env.VITE_WITHOUT_NAVBAR_ROUTES.split(' ');
     const { pathname } = useLocation();
@@ -22,7 +21,7 @@ export default function Navigation() {
             <div className='max-w-7xl mx-auto flex justify-between items-center relative my-auto w-full'>
                 <div className="hidden md:block min-w-10"></div>
                 <div className="absolute left-1/2 -translate-x-1/2 flex justify-center">
-                    <Link to={`${basePath}`}>
+                    <Link to="/">
                         <img src={Logo} alt="Logo" className="h-4 sm:h-6"/>
                     </Link>
                 </div>
@@ -51,8 +50,8 @@ export default function Navigation() {
             >
                 <nav>
                     <ul className="flex flex-col gap-y-2">
-                        <li><Link to={`${basePath}/properties`} onClick={closeMenu}>For sale</Link></li>
-                        <li><Link onClick={closeMenu}>To rent</Link></li>
+                        <li><Link to={`/properties`} onClick={closeMenu}>For sale</Link></li>
+                        <li><Link to={`/properties`} onClick={closeMenu}>To rent</Link></li>
                     </ul>
                 </nav>
             </div>

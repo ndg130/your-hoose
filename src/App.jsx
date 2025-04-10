@@ -25,7 +25,7 @@ import DummyPage from './pages/DummyPage';
 import Login from './pages/User/Login';
 
 function App() {
-    const basename = import.meta.env.MODE === 'production' ? '/your-hoose' : '';
+
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -38,7 +38,7 @@ function App() {
             <div className='h-screen bg-neutral-light font-base overflow-x-hidden'>
                 <Navigation />
                 <main className='pb-10'>
-                    <Routes basename={basename}>
+                    <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/properties" element={<Properties />} />
                         <Route path="/properties/:id" element={<PropertyListing />} />

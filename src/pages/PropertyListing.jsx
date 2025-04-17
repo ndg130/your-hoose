@@ -195,8 +195,8 @@ export default function PropertyListing() {
                 property={property}
                 photoGroup={photoGroup}
                 onClose={() => setLightBoxVisible(false)}
-                onPrevious={() => setActiveImageIndex(activeImageIndex - 1)}
-                onNext={() => setActiveImageIndex(activeImageIndex + 1)}
+                onNext={handleNext}
+                onPrevious={handlePrevious}
                 activeImageIndex={activeImageIndex}
                 setActiveImageIndex={setActiveImageIndex}
             />

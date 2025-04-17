@@ -97,14 +97,14 @@ export default function PropertyCard({property}) {
                     )}
                  
                 </div>
-                <div className='min-h-[4.375rem] flex items-center bg-primary/25 text-accent-dark h-full'>
+                <div className='min-h-[4.375rem] h-full flex items-center bg-primary/25 text-accent-dark'>
                     <p className='w-full text-xl font-semibold px-3 py-1'>{typeof property.property.price.amount === 'number' ? <MoneyFormatter amount={property.property.price.amount} /> : property.property.price.amount}</p>
                 </div>
             </div>
-            <div className='px-5'>
-                <Link to={`/properties/${property.property.id}`}className='p-2 group'>
+            <div className='px-5 flex flex-col justify-between'>
+                <Link to={`/properties/${property.property.id}`}className='group'>
                     {property && (
-                        <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center'>
+                        <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center pt-6'>
                             <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
                                 {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
                                     ? property.property.address.house_name_number + ', ' 
@@ -128,14 +128,17 @@ export default function PropertyCard({property}) {
                     <div className='mb-5'>
                         <p className='line-clamp-4 text-xs text-gray-600'>{property.property.details.description}</p>
                     </div>
-                    <div>
-                        <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date} <span className='hidden lg:inline'>by {property.property.agent_ref}</span></p>
-                    </div>
+                    {property.property.listing_date && (
+                        <div>
+                            <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date} <span className='hidden lg:inline'>by {property.property.agent_ref}</span></p>
+                        </div>                        
+                    )}
+
                 </Link>
-                <div className='flex pb-6 items-center gap-x-2'>
+                <div className='flex pb-6 items-center gap-x-2 h-[4.375rem]'>
                     {estateAgent !== null && (
                         <>
-                        <img src={estateAgent.agent.logo} className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain'/>
+                        <img src={estateAgent.agent.logo} className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain border border-solid border-accent-light'/>
                         <div className='flex flex-col ml-5 lg:ml-0'>
                             <a className="text-sm font-medium text-accent-dark" href={`tel:${estateAgent.agent.telephone}`}>
                                 <span className='hidden lg:block'>{estateAgent.agent.telephone}</span>

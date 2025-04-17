@@ -8,8 +8,7 @@ import { SlidersHorizontal, X } from 'lucide-react';
 export default function Properties() {
     const { properties, loading, error } = useContext(PropertiesContext);
 
-/*     let number = 0;
-    let maxNumber = 19;
+    let maxNumber = 10;
     
     let media = [];
     
@@ -18,7 +17,7 @@ export default function Properties() {
       let current = (i < 10) ? '0' + i : i;
     
       // The provided URL
-      const url = `https://media.rightmove.co.uk/47k/46041/158585573/46041_QRW250046_IMG_00_0000.jpeg`;
+      const url = `https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_00_0000.jpeg`;
     
       // Split the URL into three parts based on 'IMG_'
       const [partOne, partTwoAndThree] = url.split('IMG_');
@@ -35,7 +34,10 @@ export default function Properties() {
     
       // Push the image object into the media array
       media.push(image);
-    } */
+     
+    } 
+
+    
 
     const [filterMenuOpen, setFilterMenuOpen] = useState(false);
     const [filterApplied, setFiltersApplied] = useState(false);
@@ -71,6 +73,8 @@ export default function Properties() {
         setFilters(initialFilters); // Reset filters to initial state
     };
 
+    console.log(media);
+
     return (
         <div className='pb-10'>
             <SimpleHeader 
@@ -89,7 +93,7 @@ export default function Properties() {
             ) : error ? (
                 <p className="text-center text-red-500 max-w-5xl flex-1 px-4 lg:px-0">Failed to load properties: {error}</p>
             ) : filteredProperties.length > 0 ? (
-                <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
+                <div key={`properties_${filteredProperties.length}`} className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
                     <p className='sticky top-0 left-0 w-full bg-neutral-light py-3 z-50'>Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}</p>
                     {filteredProperties.map((property) => (
                         <PropertyCard key={property.id} property={property} />

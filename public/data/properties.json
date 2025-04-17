@@ -1189,19 +1189,11 @@
                    },
                    {
                       "type":"image",
-                      "url":"https://media.rightmove.co.uk/172k/171482/158691347/171482_12309101_IMG_20_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
                       "url":"https://media.rightmove.co.uk/172k/171482/158691347/171482_12309101_IMG_21_0000.jpeg"
                    },
                    {
                       "type":"image",
                       "url":"https://media.rightmove.co.uk/172k/171482/158691347/171482_12309101_IMG_22_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/172k/171482/158691347/171482_12309101_IMG_23_0000.jpeg"
                    },
                    {
                       "type":"image",
@@ -1459,15 +1451,7 @@
                    },
                    {
                       "type":"image",
-                      "url":"https://media.rightmove.co.uk/63k/62612/156478037/62612_471179_IMG_05_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
                       "url":"https://media.rightmove.co.uk/63k/62612/156478037/62612_471179_IMG_06_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/63k/62612/156478037/62612_471179_IMG_07_0000.jpeg"
                    },
                    {
                       "type":"image",
@@ -1797,14 +1781,6 @@
                    },
                    {
                       "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/145605623/149411_11047662_IMG_09_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/145605623/149411_11047662_IMG_10_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
                       "url":"https://media.rightmove.co.uk/150k/149411/145605623/149411_11047662_IMG_11_0000.jpeg"
                    },
                    {
@@ -1893,10 +1869,6 @@
                 "media":[
                    {
                       "type":"image",
-                      "url":"https://media.rightmove.co.uk/57k/56415/158347325/56415_3012188e-bb99-4fa4-9533-50324c056fc6_IMG_00_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
                       "url":"https://media.rightmove.co.uk/57k/56415/158347325/56415_3012188e-bb99-4fa4-9533-50324c056fc6_IMG_01_0000.jpeg"
                    },
                    {
@@ -1922,10 +1894,6 @@
                    {
                       "type":"image",
                       "url":"https://media.rightmove.co.uk/57k/56415/158347325/56415_3012188e-bb99-4fa4-9533-50324c056fc6_IMG_07_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/57k/56415/158347325/56415_3012188e-bb99-4fa4-9533-50324c056fc6_IMG_08_0000.jpeg"
                    },
                    {
                       "type":"image",
@@ -2436,10 +2404,6 @@
                 "media":[
                    {
                       "type":"image",
-                      "url":"https://media.rightmove.co.uk/47k/46041/149259683/46041_QRW210129_IMG_00_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
                       "url":"https://media.rightmove.co.uk/47k/46041/149259683/46041_QRW210129_IMG_01_0000.jpeg"
                    },
                    {
@@ -2541,10 +2505,6 @@
                    {
                       "type":"image",
                       "url":"https://media.rightmove.co.uk/47k/46041/149259683/46041_QRW210129_IMG_26_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/47k/46041/149259683/46041_QRW210129_IMG_27_0000.jpeg"
                    },
                    {
                       "type":"image",
@@ -3557,124 +3517,6 @@
        },
        {
           "property":{
-             "id":"23",
-             "agent_ref":"Living Local, Blaydon",
-             "address":{
-                "house_name_number":"Not specified",
-                "street_name":"Dominies Close",
-                "district":"Rowlands Gill",
-                "town":"Rowlands Gill",
-                "county":"Tyne and Wear",
-                "postcode_1":"NE39",
-                "postcode_2":""
-             },
-             "price":{
-                "amount":325000,
-                "frequency":"sale",
-                "qualifier":"offers over"
-             },
-             "details":{
-                "property_type":"Detached House",
-                "status":"Available",
-                "bedrooms":4,
-                "bathrooms":2,
-                "reception_rooms":2,
-                "description":"This beautifully presented four-bedroom detached family home is located in a quiet cul-de-sac in Rowlands Gill. It features a spacious open-plan lounge/dining room, conservatory, modern kitchen, utility room, and W/C. The first floor includes four bedrooms and a family bathroom. The property has a double driveway and a well-maintained rear garden. EPC rating C.",
-                "features":[
-                   "Detached four-bedroom family home",
-                   "Open-plan lounge/dining room",
-                   "Spacious conservatory",
-                   "Modern kitchen and separate utility room",
-                   "Double driveway and enclosed rear garden",
-                   "Located in a quiet cul-de-sac"
-                ],
-                "media":[
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_00_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_01_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_02_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_03_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_04_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_05_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_06_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_07_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_08_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_09_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_10_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_11_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_12_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_13_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_14_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_15_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_16_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_17_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_18_0000.jpeg"
-                   },
-                   {
-                      "type":"image",
-                      "url":"https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_19_0000.jpeg"
-                   }
-                ]
-             }
-          }
-       },
-       {
-          "property":{
              "id":"24",
              "agent_ref":"YOUR MOVE Chris Stonock, Rowlands Gill",
              "address":{
@@ -3899,6 +3741,2871 @@
                 ]
              }
           }
-       }
+       },
+       {
+        "property": {
+          "id": "26",
+          "agent_ref": "Sarah Mains Residential, Whickham",
+          "address": {
+            "house_name_number": "Not specified",
+            "street_name": "Dominies Close",
+            "district": "Rowlands Gill",
+            "town": "Rowlands Gill",
+            "county": "Tyne and Wear",
+            "postcode_1": "NE39",
+            "postcode_2": ""
+          },
+          "price": {
+            "amount": 325000,
+            "frequency": "sale",
+            "qualifier": "offers in region of"
+          },
+          "details": {
+            "property_type": "Detached House",
+            "status": "Available",
+            "bedrooms": 4,
+            "bathrooms": 2,
+            "reception_rooms": 2,
+            "description": "An impressive detached family home set within a desirable location. The living space offers a guest cloaks/wc, a 23' lounge/diner, fitted dining kitchen, conservatory, four double bedrooms (one with en-suite), and a modern family bathroom. Externally, the property features driveway parking for several cars, an integral garage, and well-tended gardens.",
+            "features": [
+              "Detached family home",
+              "Four double bedrooms",
+              "Conservatory",
+              "Fitted dining kitchen",
+              "Two bathrooms (including en-suite)",
+              "Integral garage & driveway parking",
+              "Well-tended gardens",
+              "Council Tax Band D",
+              "EPC Rating C"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_00_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_01_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_02_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_03_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_04_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_05_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_06_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_07_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_08_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_09_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_10_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_11_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_12_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_13_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_14_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_15_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_16_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_17_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_18_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_19_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_20_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_21_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_22_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_23_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_24_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_25_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_26_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_27_0000.jpeg"
+                },
+                {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_28_0000.jpeg"
+                }
+            ]
+          }
+        }
+        },
+          {
+            "property": {
+            "id": "27",
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Thornley Lane",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 325000,
+                "frequency": "sale",
+                "qualifier": "offers invited between £325,000 & £350,000"
+              },
+              "details": {
+                "property_type": "Detached Dormer Bungalow",
+                "status": "Sold STC",
+                "bedrooms": 4,
+                "bathrooms": 3,
+                "reception_rooms": 2,
+                "description": "This significantly extended detached dormer bungalow offers flexible accommodation with stunning countryside views. The ground floor includes an entrance hall, lounge with feature fireplace, open plan kitchen diner with breakfast peninsula and French doors to the rear garden, separate utility room with side access, and a downstairs shower room/WC. Additionally, there are two further rooms on the ground floor, one currently used as a bedroom and the other as a formal dining room, both of which could serve multiple purposes. The first floor features a bright and airy landing/study space, a master bedroom with a four-piece en-suite and fitted wardrobes, and another generous bedroom with en-suite and large fitted wardrobes. Externally, the property boasts wrap-around grounds with a garden, drive, and garage to the front, a lawned section with shed to the side, and a sunny southerly paved and bedded garden to the rear.",
+                "features": [
+                  "Offers Invited Between £325,000 & £350,000",
+                  "Downstairs Shower Room/WC",
+                  "Garage & Drive",
+                  "Open Plan Kitchen Diner",
+                  "Separate Utility Room",
+                  "Significantly Extended",
+                  "Stunning Countryside Views",
+                  "Sunny Southerly Rear Aspect",
+                  "Three / Four Bedrooms",
+                  "Two En-Suite Bedrooms"
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_00_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_01_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_02_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_03_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_04_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_05_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_06_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_07_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_08_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_09_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_10_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_11_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_12_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_13_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_14_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_15_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_16_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_17_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_18_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_19_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_20_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_21_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_22_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_23_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_24_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_25_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_26_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_27_0000.jpeg"
+                    }
+                ]
+              }
+            }
+          },
+          {
+            "property": {
+                "id": "28",
+              "agent_ref": "Living Local, Blaydon",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Dominies Close",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 315000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Available",
+                "bedrooms": 4,
+                "bathrooms": 2,
+                "reception_rooms": 2,
+                "description": "This beautifully presented four-bedroom detached family home is situated in a quiet cul-de-sac in Rowlands Gill. The ground floor features an open-plan lounge/dining area leading to a spacious conservatory, a modern kitchen with a separate utility room and W/C. The first floor offers four good-sized bedrooms and a family bathroom. Externally, the property benefits from a double driveway and an enclosed rear garden, ideal for entertaining. The property is offered chain-free and has an EPC rating of C.",
+                "features": [
+                  "Chain free",
+                  "Detached family home",
+                  "Four bedrooms",
+                  "Double driveway",
+                  "Enclosed rear garden",
+                  "EPC rating C"
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_00_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_01_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_02_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_03_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_04_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_05_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_06_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_07_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_08_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_09_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_10_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_11_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_12_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_13_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_14_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_15_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_16_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_17_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_18_0000.jpeg"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_19_0000.jpeg"
+                    }
+                ]
+              }
+            }
+          },
+          {
+            "property": {
+                "id": "29",
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Thornley Lane",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 260000,
+                "frequency": "sale",
+                "qualifier": "offers in excess of"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "This well-presented three-bedroom semi-detached house is ideally suited for families. Nestled amidst an array of public transport links and walking routes, the location offers a perfect blend of convenience and tranquillity. Inside, the property boasts two spacious reception rooms. Reception room one is enhanced by large windows allowing abundant natural light to flood the room, coupled with a cosy fireplace, adding an air of warmth and homeliness. The second reception room is open-plan with a charming view of the garden, creating a serene space for relaxation or entertaining guests. The house comprises three bedrooms, two of which are double-sized and come with built-in wardrobes, offering ample storage space. The third bedroom is a single room, also featuring built-in wardrobes, perfect for a child's room or a home office. The property's kitchen is equipped with a separate utility room, providing additional storage or workspace. There is also a single bathroom within the house, fitted with a heated towel rail for your comfort. On the outside, the property includes a garage and driveway for secure off-street parking. A downstairs WC adds to the convenience of the layout. Both front and rear gardens provide generous outdoor space for family activities or al fresco dining. Plus, with no onward chain, the transition into your new home could be smoother and faster.",
+                "features": [
+                  "Three-bedroom semi-detached house",
+                  "Two reception rooms",
+                  "Modern kitchen with separate utility room",
+                  "Garage and driveway",
+                  "Front and rear gardens",
+                  "No onward chain",
+                  "Council Tax Band C",
+                  "EPC Rating D",
+                  "Freehold"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_09_0000.jpeg"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Ashtree Avenue",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 260000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Available",
+                "bedrooms": 4,
+                "bathrooms": 2,
+                "reception_rooms": 2,
+                "description": "This immaculately presented and much improved four-bedroom detached family home features open-plan living with bi-fold doors opening onto a west-facing rear garden. Located in the picturesque village of High Spen, the property offers a spacious living room with a stylish fireplace, a modern kitchen with integrated appliances, a versatile reception room currently used as a playroom, and a convenient ground floor W.C. The first floor comprises four generously sized bedrooms, including a master with en-suite and fitted wardrobes. Externally, there is a beautifully maintained rear garden, a double driveway, and a single garage.",
+                "features": [
+                  "Four-bedroom detached family home",
+                  "Open-plan living with bi-fold doors",
+                  "Modern kitchen with integrated appliances",
+                  "Versatile reception room/playroom",
+                  "Master bedroom with en-suite and fitted wardrobes",
+                  "West-facing rear garden",
+                  "Double driveway and single garage",
+                  "Freehold property",
+                  "Council Tax Band D",
+                  "EPC Rating: Ask agent"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_20_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159240782/127717_RS2185_IMG_21_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "30"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Dobson Close",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 245000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Sold STC",
+                "bedrooms": 4,
+                "bathrooms": 2,
+                "reception_rooms": 2,
+                "description": "This four-bedroom detached home, built in 2013, has been improved by the owners, including a transformation of the rear garden to provide a superb low-maintenance, two-level entertaining space that is also great for children. With uPVC double glazing, gas central heating (system boiler), and a security alarm, the house provides well-presented accommodation throughout. The ground floor comprises a hallway with double doors to the kitchen/dining room, which has a bay window to the dining area to the front and French doors out to the rear. The kitchen includes contemporary white fitted units with integrated appliances (fridge/freezer, dishwasher, washing machine, vented tumble dryer, electric oven, microwave, and gas hob). There is also an additional free-standing Beko fridge/freezer that could potentially be included. At the end of the hallway is the lounge, which has a contemporary electric fire and inset eye-level TV bracket. To the front of the house is a study and an adjacent W.C., with a small built-in cupboard next to the entrance door. Stairs from the hallway lead up to the first floor, where the landing has a cupboard housing the hot water cylinder. Directly ahead from the top of the stairs is the master bedroom, which has fitted wardrobes and an en suite shower room that was refitted in 2022 with a double-length walk-in shower cubicle with dual-head mains-fed shower and a wash basin and W.C. in vanity unit. There are three further bedrooms, two of which are currently primarily used as dressing rooms, and a family bathroom, which was also refitted in 2022 with a contemporary suite including another dual-head shower over the bath. Externally, there is a small forecourt garden area and adjacent driveway providing access to the garage, which has an up-and-over door, lights, and electric, and has boarding for storage above. To the rear is the impressive garden, which has a spacious decked area immediately out from the kitchen, a wooden summerhouse/bar with lights and electric, and a covered barbecue area with external power points. There are steps down to the lower level which has a chipped slate area, a covered hot tub area with raised borders, an artificially turfed lawn, and a shed for storage.",
+                "features": [
+                  "Four Bedroom Detached House",
+                  "Great garden for entertaining including bar",
+                  "En-Suite Off Master bedroom",
+                  "Approximate floor area: 102sq.m./1,090sq.ft.",
+                  "Gateshead Council Tax Band D",
+                  "EPC Grade C"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_20_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_21_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_22_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_23_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151674779/46041_QRW240227_IMG_24_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "31"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Strothers Road",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 240000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "reception_rooms": 2,
+                "description": "Built in 2013, this modern family home has been improved and extended in recent years to offer spacious accommodation with a versatile dining/family/garden room to the rear. The house has UPVC double glazing and gas central heating via Logic combi. boiler with Hive heating controls. The ground floor comprises an entrance hall, W.C., living room with bay window, kitchen fitted with wooden flooring, white high gloss wall and base units, granite-effect worktops, built-in electric oven, four-ring gas hob, integrated slimline dishwasher, and built-in cupboard. Open from the kitchen is the garden/family room which has a wood-burning stove towards one corner and a sliding door out to the rear garden. The first floor includes the main bedroom with built-in wardrobes and cupboard and an en suite shower room with a double-length shower cubicle with electric shower, wash basin in vanity unit, and W.C. There are two further bedrooms, one with built-in wardrobes, and a bathroom fitted with a white suite. Externally, there is a lawned front garden with a small hedged border that extends around the side, and a gate for access to the rear garden, which is also predominantly lawned and has access via a side door into the adjacent garage, which has an up-and-over door and is also accessed via the block-paved driveway to the side.",
+                "features": [
+                  "Extended three-bedroom detached house",
+                  "Spacious garden room/family room off kitchen",
+                  "Garage and Driveway to the side",
+                  "Approx. floor area: 122sq.m./1,321sq.ft.",
+                  "EPC rating: C",
+                  "Council tax band: C [Gateshead Council]"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157298378/46041_QRW240372_IMG_13_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "32"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Dominies Close",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 235000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Available",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "Situated in a pleasant cul-de-sac, this charming three-bedroom detached home is ideal for families or professionals seeking a well-appointed home in a desirable location. Inside, the spacious lounge features an attractive fireplace, creating a cozy and inviting atmosphere. The modern dining kitchen seamlessly connects to a conservatory through patio doors, offering the perfect space for entertaining or relaxing, whilst a useful utility room adds convenience to everyday living. The home also benefits from a stylish shower room, designed with contemporary fittings for a touch of luxury. Outside, the generously sized rear garden is a true highlight, boasting a fabulous decked sun terrace, perfect for outdoor dining or unwinding in a peaceful setting. A block paved driveway provides off-street parking for more than one car, and there is an attached single garage for additional off-street parking.",
+                "features": [
+                  "Three bedrooms",
+                  "Outstanding countryside views",
+                  "Modern dining kitchen",
+                  "Stylish shower room",
+                  "Conservatory",
+                  "Utility room",
+                  "Decked sun terrace",
+                  "Block paved driveway",
+                  "Attached single garage",
+                  "Council Tax Band C",
+                  "EPC Rating C"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_20_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_21_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_22_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160506965/12067_HEO240091_IMG_23_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "33"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Thornley Lane",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 230000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "Offered for sale subject to the grant of probate, this spacious semi-detached home, built in the 1950s, features UPVC double glazing and gas central heating via a Baxi combi boiler installed in 2020. The ground floor comprises an entrance hallway with a built-in cupboard and stairs to the first floor, a bay-fronted living room with glazed double doors leading to the rear dining room, and a kitchen fitted with wood-effect wall and base units, built-in electric oven and hob with extractor over, pantry cupboard, and a door into the garage. The garage includes an under-stair cupboard, partitioned store area, lighting, electric sockets, a cold water tap, and a door to the rear garden. Upstairs, the landing has a hatch to the loft space. There are two double bedrooms—the front with a bay window and fitted wardrobes, and the rear with a built-in wardrobe. The third bedroom is situated at the front. The bathroom is fitted with a white suite including a Triton electric shower over the bath, wash basin, and W.C., with a cupboard housing the Baxi combi boiler. Externally, the rear garden has two lawned areas with borders, a central path, a patio area, and pebbled sections. The front garden is lawned, and a block-paved driveway provides parking for 2-3 cars.",
+                "features": [
+                  "Bay-fronted three-bedroom semi-detached house",
+                  "Available with no onward chain",
+                  "Situated in a popular area of Rowlands Gill",
+                  "Approximate floor area: 107sq.m./1,156sq.ft.",
+                  "EPC rating: C",
+                  "Council tax band: C [Gateshead Council]"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/157600568/46041_QRW240371_IMG_12_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "34"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Strothers Road",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": "2HR"
+              },
+              "price": {
+                "amount": 230000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Sold STC",
+                "bedrooms": 6,
+                "bathrooms": 3,
+                "reception_rooms": 2,
+                "description": "This spacious six-bedroom detached family home offers versatile accommodation across three floors. The ground floor features a welcoming entrance hallway, a separate lounge with spotlights, and a dining kitchen with French doors leading to a private rear garden comprising a patio, lawn, and decked seating area. The first floor includes three double bedrooms and a family-sized bathroom with a shower bath and vanity unit. The second floor boasts a main bedroom with fitted wardrobes and a generous en suite featuring a shower and separate bath, along with two additional rooms currently used as a dressing room and a study. Externally, the property benefits from a driveway leading to a single garage with a roller door and a door to the rear garden. This freehold property is offered with no onward chain.",
+                "features": [
+                  "Detached six-bedroom family home",
+                  "Spacious dining kitchen with French doors",
+                  "Private rear garden with patio, lawn, and decked area",
+                  "Main bedroom with en suite and fitted wardrobes",
+                  "Additional rooms used as dressing room and study",
+                  "Single garage with roller door and driveway",
+                  "Freehold property with no onward chain",
+                  "Council Tax Band D"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/264k/263066/152471609/263066_S396138_IMG_16_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "35"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Cowell Grove",
+                "district": "Highfield",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 225000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached House",
+                "status": "Available",
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "reception_rooms": 2,
+                "description": "Nestled within a sought-after development, this beautifully presented detached home offers spacious and modern living, making it an ideal choice for families. The property boasts a generous lounge, perfect for relaxation, and a bright dining area with a double glazed sliding patio door leading to the rear garden—ideal for entertaining. The well-appointed fitted kitchen is complemented by a useful utility room and a convenient downstairs WC. Upstairs, the master bedroom features its own en-suite shower room, while two further double bedrooms are served by a stylish modern family bathroom. Externally, the home benefits from front and rear gardens, with the generous rear garden offering plenty of space for outdoor activities. A driveway provides ample parking, along with an integral garage for added convenience. Situated in a popular village location, this home is ideal for families and professionals alike.",
+                "features": [
+                  "Three Bedrooms",
+                  "Detached Family Home",
+                  "Beautiful Gardens",
+                  "Driveway Parking & Garage",
+                  "Fitted Kitchen",
+                  "Modern Bathroom",
+                  "Council Tax Band D",
+                  "EPC Rating D"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/160032149/12067_WHI250133_IMG_20_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "36"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Sherburn Park Drive",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 250000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Detached Bungalow",
+                "status": "Available",
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "This highly impressive, recently refurbished bungalow is set within a popular residential location. Boasting driveway parking for a number of cars, a larger than average single garage, and a ventilation system. The living space includes a lounge with patio doors to the fabulous rear garden where there is a built-in BBQ and gazebo, a stylish kitchen, useful utility room, two bedrooms, and a beautiful bathroom. A well-tended lawned garden lies to the front, adjacent to which is a driveway providing off-street parking for several cars. The driveway leads to the detached, larger than average single garage. To the rear, there is a fabulous enclosed landscaped garden which incorporates a lawned area with planted borders, a paved patio area with a built-in BBQ, a fire pit area, as well as a gazebo.",
+                "features": [
+                  "Recently refurbished detached bungalow",
+                  "Driveway parking for multiple cars",
+                  "Larger than average single garage with power and lighting",
+                  "Ventilation system installed",
+                  "Stylish kitchen and utility room",
+                  "Beautiful bathroom",
+                  "Fabulous enclosed landscaped rear garden with built-in BBQ, fire pit, and gazebo",
+                  "Well-tended lawned front garden"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_20_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_21_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_22_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_23_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_24_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/150554753/12067_WHI240467_IMG_25_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "37"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Spen Burn",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 220000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Semi-Detached Bungalow",
+                "status": "Sold STC",
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "Outstanding semi-detached bungalow with a truly magnificent rear garden. The beautifully presented living space includes a lounge, fabulous kitchen, two bedrooms, and a modern bathroom. Additional features include a conservatory, driveway parking, and a garage. Local amenities and facilities are available within the area, with transport routes and services providing commuter links to the surrounding areas.",
+                "features": [
+                  "Two Bedrooms",
+                  "Fabulous Bungalow",
+                  "Magnificent Gardens",
+                  "Driveway & Garage",
+                  "Council Tax Band B",
+                  "EPC Rating D"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_20_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_21_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_22_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_23_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_24_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_25_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_26_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/153512408/12067_WHI240689_IMG_27_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "38"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Low West Avenue",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 220000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Detached Bungalow",
+                "status": "Available",
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "Available with no onward chain, this two-bedroom detached bungalow, situated within the Rowlands Gill conservation area, has been tastefully modernised and improved by the current owner. The accommodation includes an entrance lobby with storage, a hallway with wood laminate flooring opening into the lounge featuring a gas stove fire, and a kitchen fitted with white units, wood-effect worktops, and a Range-style Indesit cooker. The kitchen also includes a dishwasher and washing machine and has a bay window. Off the kitchen, there is a second bedroom and a lobby leading to the bathroom, fitted with a white suite including a dual-head, mains-fed shower. The property also benefits from a boarded-out loft space with ladder access and electrics. Externally, there is a fenced low-maintenance front garden and a pebbled driveway providing parking for 2-3 cars. The rear features a tiered garden with a spacious raised patio area secluded by surrounding trees, and an additional ground-floor level flagged patio.",
+                "features": [
+                  "Two-bedroom detached bungalow",
+                  "Situated within the Rowlands Gill conservation area",
+                  "No onward chain",
+                  "Approximate floor area: 62 sq.m. / 672 sq.ft.",
+                  "EPC rating: D",
+                  "Council tax band: C",
+                  "Double glazing (some uPVC, some hardwood-framed)",
+                  "Gas central heating via Baxi combi boiler",
+                  "Boarded-out loft space with ladder access and electrics",
+                  "Pebbled driveway with parking for 2-3 cars",
+                  "Tiered rear garden with raised patio area",
+                  "Low-maintenance front garden"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/151896536/46041_QRW230327_IMG_12_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "39"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Brockwell Road",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 210000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Town House",
+                "status": "Available",
+                "bedrooms": 4,
+                "bathrooms": 2,
+                "reception_rooms": 1,
+                "description": "Jan Mitchell Properties are delighted to present this four-bedroom townhouse with accommodation spread over three floors, situated in the popular picturesque village of High Spen between Rowlands Gill & Ryton on the newly built estate by Avant Homes. Internally, the accommodation is tastefully decorated throughout and briefly comprises: entrance hall, integrated kitchen with fitted wall and floor units and dining space, ground floor WC, and bright and airy lounge with storage beneath the stairs and bi-fold doors opening onto the garden, making it perfect for entertaining. To the first floor, there are three good-sized bedrooms and a three-piece family bathroom WC. To the second floor, there is the beautiful main bedroom suite with snug area, three-piece en-suite, and built-in storage cupboard. Externally, there is a double block-paved driveway to the front providing off-street parking for multiple vehicles and a low-maintenance Westerly facing rear garden with patio areas and decked sections.",
+                "features": [
+                  "Accommodation spread over three floors",
+                  "Double block-paved driveway",
+                  "Four-bedroom family home",
+                  "Freehold property",
+                  "Gas central heating & double glazing",
+                  "Generous rear garden",
+                  "Ideal first purchase",
+                  "Master en-suite shower room WC",
+                  "Popular village location",
+                  "Westerly facing rear"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/157611212/127717_RS2229_IMG_17_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "40"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Pattinson Estate Agents, Whickham",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Firwood Crescent",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 210000,
+                "frequency": "sale",
+                "qualifier": "offers in excess of"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 4,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "This charming semi-detached property is situated in a strong local community, ideal for those who enjoy walking and cycling routes. The property boasts an open-plan kitchen with a utility room and dining space, providing direct access to the garden. The reception room features a warm, inviting atmosphere with a feature fireplace and a view overlooking the garden. The home offers four bedrooms, including three double bedrooms (two upstairs with built-in wardrobes and one on the ground floor) and a single bedroom suitable for use as an office or nursery. The bathroom has been recently refurbished, adding modern elegance to the home. Externally, the property is surrounded by gardens on three sides and benefits from off-street parking.",
+                "features": [
+                  "Four Bedrooms",
+                  "Two Reception Rooms",
+                  "Ground Floor WC",
+                  "Driveway & Gardens",
+                  "Freehold",
+                  "EPC Rating C",
+                  "Council Tax Band B"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/55k/54371/150085712/54371_12397775_IMG_10_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "41"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Highfield Road",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 200000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Available",
+                "bedrooms": 4,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "This impressively extended home is a rare treat and is sure to appeal to couples and families looking for a well-presented house with gardens and off-street parking in the Rowlands Gill area. With UPVC double glazing and gas central heating (via Worcester combi. boiler), the accommodation comprises, on the ground floor: entrance lobby with stairs to the first floor, living room with laminate flooring and gas fire with surround, folding door through to the fitted kitchen, which has white units, granite-effect worktops, composite sink, free-standing Range style cooker and recessed spotlights. A door to the side of the kitchen leads into the dining room, which has a door out to the garden to the rear, and a door through to the utility room to the front, which has white base units, a circular sink, plumbing for the washing machine and laminate flooring. Off to the rear of the kitchen is the bathroom, which has a white suite with a mains-fed shower over the bath, a 'floating' wash basin and close-coupled toilet. To the first floor, the landing leads to the four bedrooms, including the main bedroom with a walk-in wardrobe. The landing also has a loft hatch for access to the part-boarded loft, and there is a W.C. with a toilet and wash basin. Externally, there is a good-sized tiered rear garden with steps up to a level lawn and up further to a flagged patio. To the front, there is a driveway and an artificially turfed garden.",
+                "features": [
+                  "Extended four-bedroom semi-detached house",
+                  "Good-sized rear garden and off-street parking",
+                  "Two reception rooms plus utility",
+                  "Approx. floor area: 105sq.m./1,134sq.ft.",
+                  "EPC rating: C (75)",
+                  "Council tax band: A"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/160065929/46041_QRW250045_IMG_14_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "42"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Dominies Close",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 200000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Available",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "Nestled in the picturesque village of Rowlands Gill, this charming semi-detached house offers a perfect blend of modern style and homely comfort. Boasting three bedrooms, this property exudes a sense of luxury and sophistication. The property's stylish oak interiors, cosy ambiance, and attention to detail make it a truly special find. Don't miss the opportunity to make this house your dream home in the heart of the village. Contact us today to arrange a viewing.",
+                "features": [
+                  "Three Bedroom Semi Detached House",
+                  "Desirable Location",
+                  "Immaculate Throughout",
+                  "Approximate Floor Area: 64 sq.m.",
+                  "Gateshead Council Tax Band C",
+                  "EPC Grade C",
+                  "Oak doors and skirting boards throughout",
+                  "Wi-Fi remote access alarm system",
+                  "Loft with partial boarding and easy steps access via hatch",
+                  "Detached garage with electric door and pod point EV charger"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156279953/46041_QRW240354_IMG_14_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "43"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Sherburn Park Drive",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 200000,
+                "frequency": "sale",
+                "qualifier": "offers in region of"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "Situated towards the top end of this popular 1960s-built estate, this three-bedroom semi-detached house has uPVC double glazing and oil-fuelled central heating and will appeal to those looking for an opportunity to put their own stamp on their next home. The house provides accommodation comprising: entrance hall, lounge with bow window, kitchen diner - also with a bow window to the front - fitted with wood-effect units and granite-effect worktops including breakfast bar, built-in electric oven and electric hob with extractor over. There is a side door into a storage area that has doors for access to the front and rear, and there are also three steps down to a utility area to the rear that has some fitted units and houses the Worcester oil-fuelled combi. boiler. From the hallway, the half-flight of stairs leads up to the half landing, either side of which are the third bedroom (with fitted wardrobes) and the bathroom (fitted with a coloured suite), and with a conservatory to the rear that has doors out to the garden. Up the other half-flight of stairs is the upper landing, which a spacious built-in cupboard, and with a double bedroom to either side, one with fitted wardrobes. Externally, there is a driveway that provides access to the garage (which has an up-and-oved door) and a pebbled front garden with flower beds and curved shallow stepped path leading up to the entrance. To the rear there is patio garden and a summerhouse, as well as the oil tank. Access to the rear garden is through the covered passage/storage area that also provides access to/from the kitchen.",
+                "features": [
+                  "Three Bedrooms",
+                  "Semi-Detached",
+                  "uPVC Double Glazing",
+                  "Oil-Fuelled Central Heating",
+                  "Conservatory",
+                  "Driveway & Garage",
+                  "Pebbled Front Garden",
+                  "Rear Patio Garden with Summerhouse",
+                  "Freehold",
+                  "EPC Rating D",
+                  "Council Tax Band C"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/158502530/46041_QRW250027_IMG_09_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "44"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Ashtree Avenue",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 197500,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "reception_rooms": 1,
+                "description": "Built in 2022, this modern semi-detached house offers a perfect blend of comfort and style. Boasting three well-appointed bedrooms and dual zone heating, this charming property exudes a homely and inviting atmosphere throughout. The living areas are perfect for both relaxing and entertaining, while the well-maintained garden provides a peaceful outdoor retreat. The property also benefits from off-street parking, adding to the convenience of everyday living. With a clean and stylish interior, this cosy home is ideal for those looking for a comfortable and well-maintained living space. Don't miss out on the opportunity to make this property your own and enjoy the benefits of living in this desirable location.",
+                "features": [
+                  "Three Bedroom Semi Detached House",
+                  "Immaculate Throughout",
+                  "Popular Development",
+                  "Approximate Floor Area: 82 sq.m.",
+                  "Gateshead Council Tax Band C",
+                  "EPC Grade B",
+                  "Dual Zone Heating",
+                  "Open Plan Living Space",
+                  "Integrated Appliances",
+                  "Bi-Folding Doors to Rear Garden",
+                  "Ground Floor WC/Cloakroom",
+                  "Built-in Storage Cupboards",
+                  "Master Bedroom with En-Suite",
+                  "Family Bathroom with Shower Over Bath",
+                  "Driveway for Off-Street Parking",
+                  "Landscaped Rear Garden with Paved, Lawned, and Decking Areas",
+                  "Outdoor Tap, Shed with Electrical Sockets, and Security Light"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_19_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/156946577/46041_QRW240238_IMG_20_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "45"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Ponthaugh",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 190000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Sold STC",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 2,
+                "description": "Jan Mitchell Properties are delighted to bring to the market this lovely three bedroom semi detached home within the ever desirable Ponthaugh, Rowlands Gill benefitting from no onward chain. Internally the property briefly comprises:- Entrance hall with storage cupboard, lounge with feature fireplace, dining room, kitchen with fitted wall and floor units and separate utility giving access into the garden. To the first floor off the landing, there are three bedrooms with the main benefiting from fitted wardrobes and a three piece family bathroom WC with shower over the bath. Externally there is a driveway to the front leading to the attached garage and then side access to the rear Easterly facing lawned garden.",
+                "features": [
+                  "Three Bedrooms",
+                  "Utility Space",
+                  "Attached Garage",
+                  "Desirable Residential Development",
+                  "Popular Picturesque Village",
+                  "No Onward Chain",
+                  "Ideal First Time Buy or Investment",
+                  "Freehold"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/149669684/127717_RS1789_IMG_15_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "46"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Sarah Mains Residential, Whickham",
+              "address": {
+                "house_name_number": "Towneley House",
+                "street_name": "Station Road",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 170000,
+                "frequency": "sale",
+                "qualifier": "offers in excess of"
+              },
+              "details": {
+                "property_type": "Ground Floor Apartment",
+                "status": "Sold STC",
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "description": "This charming ground floor apartment boasts a lovely open plan lounge to kitchen, two inviting bedrooms, and a stylish shower room. The apartment features a well-maintained garden, ideal for relaxing or entertaining guests, and an allocated parking space. Conveniently situated for local amenities, schools, and transport links. Early viewing advised.",
+                "features": [
+                  "Open plan lounge to kitchen",
+                  "Two bedrooms",
+                  "Stylish shower room",
+                  "Well-maintained garden",
+                  "Allocated parking space",
+                  "Convenient location for local amenities"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_18_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/13k/12067/155587151/12067_WHI240740_IMG_19_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "47"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Collingdon Green",
+                "district": "High Spen",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 150000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Semi-Detached House",
+                "status": "Available",
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "Situated in the village of High Spen, this well-presented two-bedroom semi-detached house has been maintained to a high standard by the current owners. The property benefits from off-street parking and spacious gardens to the side and rear.",
+                "features": [
+                  "Two-bedroom semi-detached house",
+                  "Off-street parking",
+                  "Spacious side and rear gardens",
+                  "Well-presented",
+                  "Close to local amenities and countryside walks"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/154559729/46041_QRW240054_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/154559729/46041_QRW240054_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/47k/46041/154559729/46041_QRW240054_IMG_11_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "48"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Hillside Close",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 140000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Terraced House",
+                "status": "Available",
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "reception_rooms": 1,
+                "description": "Located in the picturesque village of Rowlands Gill in the Derwent Valley, this charming three-bedroom mid-terraced home offers a welcoming atmosphere. The property features a ground floor WC, ample storage, and beautiful views from the front aspect. Ideal for first-time buyers or those seeking a tranquil setting with easy access to local amenities.",
+                "features": [
+                  "Three Bedrooms",
+                  "Mid-Terraced Home",
+                  "Ground Floor WC",
+                  "Ample Storage",
+                  "Gardens Front & Rear",
+                  "Gas Central Heating",
+                  "Double Glazing",
+                  "Freehold",
+                  "Council Tax Band A (Gateshead Council)",
+                  "EPC Rating D"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_10_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_11_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_12_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_13_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_14_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_15_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_16_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_17_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159289718/127717_RS2305_IMG_18_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "49"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Your Move Chris Stonock, Rowlands Gill",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Burnopfield Road",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 140000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Terraced House",
+                "status": "Available",
+                "bedrooms": 3,
+                "bathrooms": 2,
+                "description": "Jan Forster Estates welcome to the market this well-presented three-bedroom mid terrace house. Offered for sale with the benefit of no onward chain, the property will make an ideal first time buy. Located within a popular development in Rowlands Gill, the property is close to a wealth of local amenities and excellent transport links and is also close to Derwent Walk and Gibside Hall. Internally the house briefly comprises to the ground floor: - entrance porch, bright and airy lounge with a log burning stove, handy downstairs WC, and a modern kitchen dining room with floor and wall units, integrated oven and hob, fridge freezer, and access to the rear. To the first floor, there are three bedrooms and a modern, tiled family bathroom WC with shower over the bath. The property further benefits from gas central heating and double glazing. Externally, there is a sizeable lawned garden to the front and there is a blocked paved garden to the rear with outhouse storage along with off-street parking.",
+                "features": [
+                  "Three Bedrooms",
+                  "Mid-Terraced House",
+                  "Ground Floor WC",
+                  "Modern Kitchen Dining Room",
+                  "Log Burning Stove",
+                  "Gas Central Heating",
+                  "Double Glazing",
+                  "Off-Street Parking",
+                  "Freehold",
+                  "Council Tax Band A",
+                  "EPC Rating D"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/12k/11305/160509422/11305_33806951_IMG_09_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "50"
+            }
+          },
+          {
+            "property": {
+              "agent_ref": "Jan Mitchell Properties, Covering North East",
+              "address": {
+                "house_name_number": "Not specified",
+                "street_name": "Windsor Court",
+                "district": "Rowlands Gill",
+                "town": "Rowlands Gill",
+                "county": "Tyne and Wear",
+                "postcode_1": "NE39",
+                "postcode_2": ""
+              },
+              "price": {
+                "amount": 125000,
+                "frequency": "sale",
+                "qualifier": "offers over"
+              },
+              "details": {
+                "property_type": "Apartment",
+                "status": "Available",
+                "bedrooms": 2,
+                "bathrooms": 2,
+                "description": "Jan Mitchell Properties are delighted to offer for sale this immaculately presented, well-proportioned, two-bedroom, two-bathroom first-floor flat with views of the Derwent Valley and Gibside Country Estate, offered with no onward chain situated in the ever-desirable Windsor Court development in the heart of Rowlands Gill in the picturesque Derwent Valley.",
+                "features": [
+                  "Allocated & Visitor Parking",
+                  "South Facing First Floor Apartment",
+                  "Gas Central Heating & Double Glazing",
+                  "Master En-Suite Shower Room W/C",
+                  "Offered With No Onward Chain",
+                  "Popular Picturesque Village",
+                  "Secure Intercom Entry System",
+                  "Stunning Views of the Derwent Valley and Gibside Country Estate"
+                ],
+                "media": [
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_00_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_01_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_02_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_03_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_04_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_05_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_06_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_07_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_08_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_09_0000.jpeg"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://media.rightmove.co.uk/128k/127717/159292811/127717_RS2249_IMG_10_0000.jpeg"
+                  }
+                ]
+              },
+              "id": "51"
+            }
+          }
     ]
  }

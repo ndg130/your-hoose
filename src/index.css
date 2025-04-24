@@ -220,13 +220,38 @@
     background-color: lightgrey;
 }
 
-/* 
-.propertyListing .swiper .swiper-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+/* Pagination styling start */
+.pagination {
+    list-style: none;
+    height: 31.5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+  
+.active {
+    background-color: #F68265;
+    border-radius: 10px;
 }
 
-.propertyListing .swiper-wrapper .swiper-slide:first-of-type {
-    column-span: 4;
-    grid-row: span 2 / span 2;
-} */
+.page-item {
+    list-style: none;
+    padding: 2px 12px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.page-item:hover {
+    background-color: #C1300B;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+/* Pagination styling end */

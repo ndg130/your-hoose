@@ -53,7 +53,7 @@ export default function PropertyCard({property}) {
     }, [property])
 
     return (
-        <div 
+        <article 
             className='propertyCard bg-white rounded-lg border border-solid border-accent-dark flex flex-col lg:flex-row'
             price={property.property.price.amount}
             bedrooms={property.property.details.bedrooms}
@@ -81,6 +81,18 @@ export default function PropertyCard({property}) {
                                 768: { slidesPerView: 1, spaceBetween: 20 },
                                 1024: { slidesPerView: 1, spaceBetween: 20 },
                             }}
+                            a11y={{
+                                enabled: true,
+                                containerMessage: 'Image carousel',
+                                containerRoleDescriptionMessage: 'carousel',
+                                itemRoleDescriptionMessage: 'slide',
+                                slideLabelMessage: '{{index}} / {{slidesLength}}',
+                                prevSlideMessage: 'Previous slide',
+                                nextSlideMessage: 'Next slide',
+                                firstSlideMessage: 'This is the first slide',
+                                lastSlideMessage: 'This is the last slide',
+                                paginationBulletMessage: 'Go to slide {{index}}'
+                              }}
                             className='rounded-tl-lg w-full object-cover group-hover:opacity-75 min-h-[12.5rem] xs:min-h-[15.625rem] sm:min-h-[18.75rem] lg:min-h-0'
                         >
                             {property.property.details.media.map((media, index) => (
@@ -88,7 +100,7 @@ export default function PropertyCard({property}) {
                                     key={index}
                                     className='bg-gray-200'
                                 >
-                                    <img className="h-full w-full object-cover" src={media.url} alt={`Property image ${index + 1}`} />
+                                    <img className="h-full w-full object-cover" src={media.url} alt="" />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -98,33 +110,36 @@ export default function PropertyCard({property}) {
                  
                 </div>
                 <div className='min-h-[4.375rem] h-full flex items-center bg-primary/25 text-accent-dark'>
-                    <p className='w-full text-xl font-semibold px-3 py-1'>{typeof property.property.price.amount === 'number' ? <MoneyFormatter amount={property.property.price.amount} /> : property.property.price.amount}</p>
+                    <h3 className='w-full text-xl font-semibold px-3 py-1'>{typeof property.property.price.amount === 'number' ? <MoneyFormatter amount={property.property.price.amount} /> : property.property.price.amount}</h3>
                 </div>
             </div>
             <div className='px-5 flex flex-col justify-between'>
                 <Link to={`/properties/${property.property.id}`}className='group'>
                     {property && (
                         <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center pt-6'>
-                            <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
-                                {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
-                                    ? property.property.address.house_name_number + ', ' 
-                                    : "" 
-                                }
-                                {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
-                                {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
-                                {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
-                            </address>
+                            <h2>
+                                <address className='font-semibold not-italic text-sm text-accent-dark group-hover:underline'>
+                                    {property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
+                                        ? property.property.address.house_name_number + ', ' 
+                                        : "" 
+                                    }
+                                    {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
+                                    {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
+                                    {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
+                                </address>                                
+                            </h2>
+
                             {property && property.property.details.status !== 'Available' && (
                                 <p className='flex text-sm bg-primary text-accent-dark font-semibold w-fit px-3 py-0.5 rounded-lg'>{property.property.details.status}</p>
                             )}                          
                         </div>
                   
                     )}
-                    <div className='flex gap-x-4 my-1.5'>
-                        <span className='text-sm'>{property.property.details.property_type}</span>
-                        <span className='text-sm flex gap-x-2 items-center'><FaBed className='text-base'/> {property.property.details.bedrooms}</span>
-                        <span className='text-sm flex gap-x-2 items-center'><FaShower className='text-base'/> {property.property.details.bathrooms}</span>
-                    </div>
+                    <ul className='flex gap-x-4 my-1.5'>
+                        <li className='text-sm'>{property.property.details.property_type}</li>
+                        <li className='text-sm flex gap-x-2 items-center'><FaBed className='text-base'/> {property.property.details.bedrooms}</li>
+                        <li className='text-sm flex gap-x-2 items-center'><FaShower className='text-base'/> {property.property.details.bathrooms}</li>
+                    </ul>
                     <div className='mb-5'>
                         <p className='line-clamp-4 text-xs text-gray-600'>{property.property.details.description}</p>
                     </div>
@@ -138,7 +153,7 @@ export default function PropertyCard({property}) {
                 <div className='flex pb-6 items-center gap-x-2 h-[4.375rem]'>
                     {estateAgent !== null && (
                         <>
-                        <img src={estateAgent.agent.logo} className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain border border-solid border-accent-light'/>
+                        <img src={estateAgent.agent.logo} alt="" className='max-h-[2.5rem] max-w-[5.75rem] h-full object-contain shadow-sm'/>
                         <div className='flex flex-col ml-5 lg:ml-0'>
                             <a className="text-sm font-medium text-accent-dark" href={`tel:${estateAgent.agent.telephone}`}>
                                 <span className='hidden lg:block'>{estateAgent.agent.telephone}</span>
@@ -151,7 +166,7 @@ export default function PropertyCard({property}) {
                 </div>          
             </div>
 
-        </div>
+        </article>
     )
 }
 

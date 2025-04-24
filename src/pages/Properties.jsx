@@ -18,16 +18,31 @@ export default function Properties() {
         maxBedrooms: 0,
         minBathrooms: 0,
         maxBathrooms: 0,
+        minPrice: 0,
+        maxPrice: ""
     };
 
     const [filters, setFilters] = useState(initialFilters);
+    const [sortOption, setSortOption] = useState("");
 
-    const filteredProperties = properties?.filter(property => 
+    const filteredProperties = (properties || [])
+    .filter(property => 
         (!filters.minBedrooms || property.property.details.bedrooms >= filters.minBedrooms) &&
         (!filters.maxBedrooms || property.property.details.bedrooms <= filters.maxBedrooms) &&
         (!filters.minBathrooms || property.property.details.bathrooms >= filters.minBathrooms) &&
-        (!filters.maxBathrooms || property.property.details.bathrooms <= filters.maxBathrooms)
-    ) ?? [];
+        (!filters.maxBathrooms || property.property.details.bathrooms <= filters.maxBathrooms) &&
+        (!filters.minPrice || property.property.price.amount >= filters.minPrice) &&
+        (!filters.maxPrice || property.property.price.amount <= filters.maxPrice)
+    )
+    .sort((a, b) => {
+        if (sortOption === 'price-asc') {
+            return a.property.price.amount - b.property.price.amount;
+        } else if (sortOption === 'price-desc') {
+            return b.property.price.amount - a.property.price.amount;
+        } else {
+            return 0;
+        }
+    });
 
     // Pagination
     const [page, setPage] = useState(0);
@@ -38,7 +53,7 @@ export default function Properties() {
 
 
     const toggleFilterMenu = () => {
-    setFilterMenuOpen(prev => !prev);
+        setFilterMenuOpen(prev => !prev);
     };
 
     const handleFilters = (e, field) => {
@@ -52,9 +67,13 @@ export default function Properties() {
         setFilters(initialFilters); // Reset filters to initial state
     };
 
+    const handleSort = (value) => {
+        setSortOption(value);
+    };
+
     useEffect(() => {
         setPage(0);
-      }, [filters]);
+      }, [filters, sortOption]);
 
     return (
         <div className='pb-10'>
@@ -77,9 +96,20 @@ export default function Properties() {
                     ) : filteredProperties.length > 0 ? (
                     <>
                         <div ref={listingsRef} className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
-                        <p className='sticky top-0 left-0 w-full lg:w-[101%] bg-neutral-light py-3 z-50'>
-                            Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}
-                        </p>
+                        <div className='flex justify-between'>
+                            <p className='sticky top-0 left-0 w-full lg:w-[101%] bg-neutral-light py-3 z-50'>
+                                Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}
+                            </p>
+                            <div className='sortWrapper border rounded-md flex items-center'>
+                                <select id="sortSelect" className='h-full px-2 py-1 rounded-md text-sm overflow-hidden' onChange={(e) => handleSort(e.target.value)}>
+                                    <option value="">Sort By</option>
+                                    <option value="price-asc">Price: Low to High</option>
+                                    <option value="price-desc">Price: High to Low</option>
+                                </select>   
+                            </div>
+                  
+                        </div>
+
                         {currentProperties.map((property) => (
                             <PropertyCard key={property.id} property={property} />
                         ))}
@@ -139,9 +169,9 @@ export default function Properties() {
                                     </div>
                                 </div>
                                 <div className='inputWrapper border px-2 py-1 rounded-md col-span-2 lg:col-span-1'>
-                                    <label className="block mb-0.5 text-[10px] font-medium text-gray-700">Maximum</label>
+                                    <label for="maxBedroomsFilter" className="block mb-0.5 text-[10px] font-medium text-gray-700">Maximum</label>
                                     <div className='selectWrapper'>
-                                        <select className="w-full" onChange={(e) => handleFilters(e, "maxBedrooms")} value={filters.maxBedrooms}>
+                                        <select id="maxBedroomsFilter" className="w-full" onChange={(e) => handleFilters(e, "maxBedrooms")} value={filters.maxBedrooms}>
                                             <option value="0">Any</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -178,13 +208,71 @@ export default function Properties() {
                                         </select>  
                                     </div>
                                 </div>
+                                <p className='col-span-2 mt-2'>Price</p>
+                                <div className='inputWrapper border px-2 py-1 rounded-md col-span-2'>
+                                    <label className="block mb-0.5 text-[10px] font-medium text-gray-700">Minimum</label>
+                                    <div className='selectWrapper'>
+                                        <select className="w-full" onChange={(e) => handleFilters(e, "minPrice")} value={filters.minPrice}>
+                                            <option value="0">Any</option>
+                                            <option value="50000">£50,000</option>
+                                            <option value="75000">£75,000</option>
+                                            <option value="100000">£100,000</option>
+                                            <option value="125000">£125,000</option>
+                                            <option value="150000">£150,000</option>
+                                            <option value="175000">£175,000</option>
+                                            <option value="200000">£200,000</option>
+                                            <option value="225000">£225,000</option>
+                                            <option value="250000">£250,000</option>
+                                            <option value="275000">£275,000</option>
+                                            <option value="300000">£300,000</option>
+                                            <option value="325000">£325,000</option>
+                                            <option value="350000">£350,000</option>
+                                            <option value="375000">£375,000</option>
+                                            <option value="400000">£400,000</option>
+                                            <option value="425000">£425,000</option>
+                                            <option value="450000">£450,000</option>
+                                            <option value="475000">£475,000</option>
+                                            <option value="500000">£500,000</option>
+                                        </select>  
+                                    </div>
+                                </div>
+                                <div className='inputWrapper border px-2 py-1 rounded-md col-span-2'>
+                                    <label className="block mb-0.5 text-[10px] font-medium text-gray-700">Maximum</label>
+                                    <div className='selectWrapper'>
+                                        <select className="w-full" onChange={(e) => handleFilters(e, "maxPrice")} value={filters.maxPrice}>
+                                            <option value="0">Any</option>
+                                            <option value="50000">£50,000</option>
+                                            <option value="75000">£75,000</option>
+                                            <option value="100000">£100,000</option>
+                                            <option value="125000">£125,000</option>
+                                            <option value="150000">£150,000</option>
+                                            <option value="175000">£175,000</option>
+                                            <option value="200000">£200,000</option>
+                                            <option value="225000">£225,000</option>
+                                            <option value="250000">£250,000</option>
+                                            <option value="275000">£275,000</option>
+                                            <option value="300000">£300,000</option>
+                                            <option value="325000">£325,000</option>
+                                            <option value="350000">£350,000</option>
+                                            <option value="375000">£375,000</option>
+                                            <option value="400000">£400,000</option>
+                                            <option value="425000">£425,000</option>
+                                            <option value="450000">£450,000</option>
+                                            <option value="475000">£475,000</option>
+                                            <option value="500000">£500,000</option>
+                                        </select>  
+                                    </div>
+                                </div>
                             </div>
 
 
                             <div className="flex justify-between items-center">
                                 <button 
                                     className="px-5 py-3 bg-complement-medium w-full text-center rounded-lg font-semibold hover:text-white hover:bg-complement-deep transition-colours duration-200 ease-linear"
-                                    onClick={resetFilters}
+                                    onClick={() => {
+                                        resetFilters();
+                                        setFilterMenuOpen(false);
+                                    }}
                                 >Clear</button>
                             </div>
                         </div>

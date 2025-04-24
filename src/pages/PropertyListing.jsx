@@ -108,7 +108,7 @@ export default function PropertyListing() {
                                 </div>
                                 <div className='lg:hidden'>
                                     {estateAgent !== null && (
-                                        <img src={`${estateAgent.agent.logo}`} alt="" className='max-h-[6.25rem] mb-10'/>
+                                        <img src={`${estateAgent.agent.logo}`} alt="" className='max-h-[6.25rem] lg:mb-10'/>
                                     )}
                                     
                                 </div>

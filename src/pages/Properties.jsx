@@ -1,46 +1,19 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useRef, useEffect } from 'react';
 import SimpleHeader from '../components/SimpleHeader';
 import PropertyCard from '../components/PropertyCard';
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 import { PropertiesContext } from '../context/properties';
-import { SlidersHorizontal, X } from 'lucide-react';
+import { SlidersHorizontal, X, ArrowLeft, ArrowRight } from 'lucide-react';
+import ReactPaginate from "react-paginate";
+import scrollToTopInstant from '../utils/scrollToTopInstant';
 
 export default function Properties() {
     const { properties, loading, error } = useContext(PropertiesContext);
 
-    let maxNumber = 10;
-    
-    let media = [];
-    
-    for (let i = 0; maxNumber > i; i++) {
-      // Format the index to two digits if it's less than 10
-      let current = (i < 10) ? '0' + i : i;
-    
-      // The provided URL
-      const url = `https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_00_0000.jpeg`;
-    
-      // Split the URL into three parts based on 'IMG_'
-      const [partOne, partTwoAndThree] = url.split('IMG_');
-      const [partTwo, partThree] = partTwoAndThree.split('_');
-    
-      // Now you can use the dynamic 'current' value as partTwo
-      const updatedUrl = `${partOne}IMG_${current}_${partThree}`;
-    
-      // Create the image object
-      const image = {
-        type: 'image',
-        url: updatedUrl,
-      };
-    
-      // Push the image object into the media array
-      media.push(image);
-     
-    } 
-
-    
-
     const [filterMenuOpen, setFilterMenuOpen] = useState(false);
     const [filterApplied, setFiltersApplied] = useState(false);
+
+    const listingsRef = useRef(null);
 
     const initialFilters = {
         minBedrooms: 0,
@@ -58,6 +31,14 @@ export default function Properties() {
         (!filters.maxBathrooms || property.property.details.bathrooms <= filters.maxBathrooms)
     ) ?? [];
 
+    // Pagination
+    const [page, setPage] = useState(0);
+    const n = 10; // properties per page
+    const startIndex = page * n;
+    const endIndex = startIndex + n;
+    const currentProperties = filteredProperties.slice(startIndex, endIndex);
+
+
     const toggleFilterMenu = () => {
     setFilterMenuOpen(prev => !prev);
     };
@@ -73,7 +54,9 @@ export default function Properties() {
         setFilters(initialFilters); // Reset filters to initial state
     };
 
-    console.log(media);
+    useEffect(() => {
+        setPage(0);
+      }, [filters]);
 
     return (
         <div className='pb-10'>
@@ -83,25 +66,50 @@ export default function Properties() {
                 backgroundImage="https://www.simpsonandbrown.co.uk/files/content/345_rotator1.jpg"
             />
             <div className='max-w-7xl mx-auto lg:px-6 pt-0 pb-10 lg:py-10 flex flex-col lg:flex-row relative gap-x-6'>
-            {loading ? (
-                <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-6 lg:px-0'>
-                    <p>Loading properties...</p>
-                    <PropertyCardSkeleton />
-                    <PropertyCardSkeleton />
-                    <PropertyCardSkeleton />
+                <div className='w-full'>
+                {loading ? (
+                    <div className='flex flex-col gap-y-5 max-w-5xl flex-1 px-6 lg:px-0'>
+                        <p>Loading properties...</p>
+                        <PropertyCardSkeleton />
+                        <PropertyCardSkeleton />
+                        <PropertyCardSkeleton />
+                    </div>
+                    ) : error ? (
+                    <p className="text-center text-red-500 max-w-5xl flex-1 px-4 lg:px-0">Failed to load properties: {error}</p>
+                    ) : filteredProperties.length > 0 ? (
+                    <>
+                        <div ref={listingsRef} className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
+                        <p className='sticky top-0 left-0 w-full lg:w-[101%] bg-neutral-light py-3 z-50'>
+                            Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}
+                        </p>
+                        {currentProperties.map((property) => (
+                            <PropertyCard key={property.id} property={property} />
+                        ))}
+                        </div>
+                        {filteredProperties.length > n && (
+                            <ReactPaginate
+                            containerClassName={"pagination"}
+                            pageClassName={"page-item"}
+                            activeClassName={"active"}
+                            onPageChange={(event) => {
+                                setPage(event.selected);
+                                listingsRef.current?.scrollIntoView({ behavior: 'smooth' });
+                              }}
+                            pageCount={Math.ceil(filteredProperties.length / n)}
+                            breakLabel="..."
+                            previousLabel={
+                                <ArrowLeft size={20} className='hover:text-accent-warm colour-ease'/>
+                            }
+                            nextLabel={
+                                <ArrowRight size={20} className='hover:text-accent-warm colour-ease'/>
+                            }
+                            />                            
+                        )}
+                    </>
+                    ) : (
+                    <p className='text-left max-w-5xl flex-1 px-6 lg:px-0'>No properties match your filters</p>
+                    )}
                 </div>
-            ) : error ? (
-                <p className="text-center text-red-500 max-w-5xl flex-1 px-4 lg:px-0">Failed to load properties: {error}</p>
-            ) : filteredProperties.length > 0 ? (
-                <div key={`properties_${filteredProperties.length}`} className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
-                    <p className='sticky top-0 left-0 w-full bg-neutral-light py-3 z-50'>Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}</p>
-                    {filteredProperties.map((property) => (
-                        <PropertyCard key={property.id} property={property} />
-                    ))}
-                </div>
-            ) : (
-                <p className='text-left max-w-5xl flex-1 px-6 lg:px-0'>No properties match your filters</p>
-            )}
                 <div className={`order-first lg:order-last p-4 mb-5 bg-white lg:min-w-[250px] lg:w-[250px] shadow-md w-full z-50 sticky top-0 left-0 lg:h-screen`}>
 
                     <button 

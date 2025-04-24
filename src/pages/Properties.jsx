@@ -5,13 +5,11 @@ import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 import { PropertiesContext } from '../context/properties';
 import { SlidersHorizontal, X, ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactPaginate from "react-paginate";
-import scrollToTopInstant from '../utils/scrollToTopInstant';
 
 export default function Properties() {
     const { properties, loading, error } = useContext(PropertiesContext);
 
     const [filterMenuOpen, setFilterMenuOpen] = useState(false);
-    const [filterApplied, setFiltersApplied] = useState(false);
 
     const listingsRef = useRef(null);
 

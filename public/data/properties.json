@@ -863,7 +863,9 @@
                       "url":"https://media.rightmove.co.uk/128k/127717/157594436/127717_RS2189_IMG_39_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-04-05", 
+             "update_date": "2025-04-12"
           }
        },
        {
@@ -1069,7 +1071,9 @@
                       "url":"https://media.rightmove.co.uk/128k/127717/157253522/127717_RS0419_IMG_40_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-16",
+              "update_date": "2025-01-16"
           }
        },
        {
@@ -1232,7 +1236,9 @@
                       "url":"https://media.rightmove.co.uk/172k/171482/158691347/171482_12309101_IMG_32_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-02-25",
+              "update_date": "2025-03-01"
           }
        },
        {
@@ -1388,7 +1394,9 @@
                       "url":"https://media.rightmove.co.uk/13k/12067/149133638/12067_WHI240368_IMG_29_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-08",
+              "update_date": "2025-01-19"
           }
        },
        {
@@ -1522,7 +1530,9 @@
                       "url":"https://media.rightmove.co.uk/63k/62612/156478037/62612_471179_IMG_24_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-03-14",
+             "update_date": "2025-03-17"
           }
        },
        {
@@ -1706,7 +1716,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/140879510/46041_QRW230259_IMG_35_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-30",
+             "update_date": "2025-02-05"
           }
        },
        {
@@ -1828,7 +1840,9 @@
                       "url":"https://media.rightmove.co.uk/150k/149411/145605623/149411_11047662_IMG_22_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-20",
+             "update_date": "2025-01-28"
           }
        },
        {
@@ -1940,7 +1954,9 @@
                       "url":"https://media.rightmove.co.uk/57k/56415/158347325/56415_3012188e-bb99-4fa4-9533-50324c056fc6_IMG_19_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-04-10",
+             "update_date": "2025-04-17"
           }
        },
        {
@@ -2139,7 +2155,9 @@
                       "url":"https://media.rightmove.co.uk/174k/173882/156889934/173882_S1181773_IMG_39_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-02-06",
+             "update_date": "2025-02-09"
           }
        },
        {
@@ -2272,7 +2290,9 @@
                       "url":"https://media.rightmove.co.uk/282k/281234/157743287/281234_4_35_IMG_23_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-03-28",
+             "update_date": "2025-04-01"
           }
        },
        {
@@ -2364,7 +2384,9 @@
                       "url":"https://media.rightmove.co.uk/37k/36060/150613658/36060_CNS240402_IMG_13_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-04",
+             "update_date": "2025-01-06"
           }
        },
        {
@@ -2515,7 +2537,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/149259683/46041_QRW210129_IMG_29_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-04-01",
+             "update_date": "2025-04-05"
           }
        },
        {
@@ -2660,7 +2684,9 @@
                       "url":"https://media.rightmove.co.uk/128k/127717/158065931/127717_RS2212_IMG_25_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-02-12",
+             "update_date": "2025-02-22"
           }
        },
        {
@@ -2750,7 +2776,9 @@
                       "url":"https://media.rightmove.co.uk/282k/281234/157747076/281234_4_6_IMG_11_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-03-02",
+             "update_date": "2025-03-09"
           }
        },
        {
@@ -2940,7 +2968,9 @@
                       "url":"https://media.rightmove.co.uk/13k/12067/157577258/12067_WHI250046_IMG_36_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-24",
+             "update_date": "2025-01-27"
           }
        },
        {
@@ -3094,7 +3124,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/152846678/46041_QRW240169_IMG_28_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-02-18",
+             "update_date": "2025-02-23"
           }
        },
        {
@@ -3216,7 +3248,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/158294744/46041_QRW240160_IMG_20_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-04-20",
+             "update_date": "2025-04-26"
           }
        },
        {
@@ -3358,7 +3392,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/150454421/46041_QRW240196_IMG_25_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-01-12",
+             "update_date": "2025-01-15"
           }
        },
        {
@@ -3512,7 +3548,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/147772934/46041_QRW230147_IMG_28_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-03-11",
+             "update_date": "2025-03-19"
           }
        },
        {
@@ -3626,7 +3664,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/151113266/46041_QRW240226_IMG_18_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-02-01",
+             "update_date": "2025-02-04"
           }
        },
        {
@@ -3739,7 +3779,9 @@
                       "url":"https://media.rightmove.co.uk/47k/46041/158585573/46041_QRW250046_IMG_18_0000.jpeg"
                    }
                 ]
-             }
+             },
+             "listing_date": "2025-03-07",
+             "update_date": "2025-03-10"
           }
        },
        {
@@ -3896,7 +3938,9 @@
                     "url": "https://media.rightmove.co.uk/13k/12067/159351965/12067_WHI240210_IMG_28_0000.jpeg"
                 }
             ]
-          }
+          },
+          "listing_date": "2025-04-12",
+          "update_date": "2025-04-18"
         }
         },
           {
@@ -4050,7 +4094,9 @@
                         "url": "https://media.rightmove.co.uk/128k/127717/159721439/127717_RS2318_IMG_27_0000.jpeg"
                     }
                 ]
-              }
+              },
+              "listing_date": "2025-01-19",
+              "update_date": "2025-01-25"
             }
           },
           {
@@ -4168,7 +4214,9 @@
                         "url": "https://media.rightmove.co.uk/150k/149411/158290430/149411_12592152_IMG_19_0000.jpeg"
                     }
                 ]
-              }
+              },
+              "listing_date": "2025-02-22",
+              "update_date": "2025-02-28"
             }
           },
           {
@@ -4249,7 +4297,9 @@
                     "url": "https://media.rightmove.co.uk/55k/54371/155674526/54371_12472306_IMG_09_0000.jpeg"
                   }
                 ]
-              }
+              },
+              "listing_date": "2025-03-21",
+              "update_date": "2025-03-26"
             }
           },
           {
@@ -4379,6 +4429,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-04-08", 
+              "update_date": "2025-04-14",
               "id": "30"
             }
           },
@@ -4517,6 +4569,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-02",
+              "update_date": "2025-01-07",
               "id": "31"
             }
           },
@@ -4611,6 +4665,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-02-08",
+              "update_date": "2025-02-13",
               "id": "32"
             }
           },
@@ -4750,6 +4806,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-01",
+              "update_date": "2025-03-06",
               "id": "33"
             }
           },
@@ -4840,6 +4898,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-28",
+              "update_date": "2025-02-03" ,
               "id": "34"
             }
           },
@@ -4948,6 +5008,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-04-22",
+              "update_date": "2025-04-27",
               "id": "35"
             }
           },
@@ -5072,6 +5134,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-16",
+              "update_date": "2025-03-22",
               "id": "36"
             }
           },
@@ -5216,6 +5280,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-02-14",
+              "update_date": "2025-02-19",
               "id": "37"
             }
           },
@@ -5366,6 +5432,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-06",
+              "update_date": "2025-01-14",
               "id": "38"
             }
           },
@@ -5462,6 +5530,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-04",
+              "update_date": "2025-03-12",
               "id": "39"
             }
           },
@@ -5576,6 +5646,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-04-03",
+              "update_date": "2025-04-09",
               "id": "40"
             }
           },
@@ -5659,6 +5731,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-10",
+              "update_date": "2025-01-18",
               "id": "41"
             }
           },
@@ -5757,6 +5831,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-02-04",
+              "update_date": "2025-02-11",
               "id": "42"
             }
           },
@@ -5835,6 +5911,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-18",
+              "update_date": "2025-03-24",
               "id": "43"
             }
           },
@@ -5918,6 +5996,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-26",
+              "update_date": "2025-02-01",
               "id": "44"
             }
           },
@@ -6051,6 +6131,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-04-15",
+              "update_date": "2025-04-20",
               "id": "45"
             }
           },
@@ -6155,6 +6237,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-02-10",
+              "update_date": "2025-02-15",
               "id": "46"
             }
           },
@@ -6272,6 +6356,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-25",
+              "update_date": "2025-03-31",
               "id": "47"
             }
           },
@@ -6321,6 +6407,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-04-18",
+              "update_date": "2025-04-24",
               "id": "48"
             }
           },
@@ -6439,6 +6527,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-01-20",
+              "update_date": "2025-01-28",
               "id": "49"
             }
           },
@@ -6521,6 +6611,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-02-16",
+              "update_date": "2025-02-21",
               "id": "50"
             }
           },
@@ -6604,6 +6696,8 @@
                   }
                 ]
               },
+              "listing_date": "2025-03-06",
+              "update_date": "2025-03-14",
               "id": "51"
             }
           }

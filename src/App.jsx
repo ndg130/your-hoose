@@ -4,7 +4,8 @@ import 'swiper/css/pagination';
 import './App.css'
 
 import { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './utils/ScrollToTop';
 
 import Navigation from './components/Navigation'
 import DesignSystem from './pages/DesignSystem'
@@ -26,36 +27,31 @@ import Login from './pages/User/Login';
 
 function App() {
 
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        console.log('scrolling')
-    }, [pathname]);
-
     return (
         <>
             <div className='h-screen bg-neutral-light font-base overflow-x-hidden'>
                 <Navigation />
                 <main className='pb-10'>
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/properties" element={<Properties />} />
-                        <Route path="/properties/:id" element={<PropertyListing />} />
-                        <Route path="/hold" element={<DummyPage />} />
-                        <Route path="/design-system" element={<DesignSystem />} >
-                            <Route path="button" element={<ButtonPage />} />
-                        </Route>
-                        <Route path="login" element={<Login />} />
-                        <Route path="/admin" element={<AdminDashboard />} >
-                            <Route path="dashboard" element={<Dashboard />} />
-                            <Route path="properties" element={<PropertiesDashboard />} />
-                            <Route path="estate-agents" element={<EstateAgentsDashboard />} />
-                            <Route path="edit-property/:id" element={<EditProperty />} />
-                            <Route path="add-property" element={<AddProperty />} />
-                        </Route>
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>                
+                    <ScrollToTop>
+                        <Routes>
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/properties" element={<Properties />} />
+                            <Route path="/properties/:id" element={<PropertyListing />} />
+                            <Route path="/hold" element={<DummyPage />} />
+                            <Route path="/design-system" element={<DesignSystem />} >
+                                <Route path="button" element={<ButtonPage />} />
+                            </Route>
+                            <Route path="login" element={<Login />} />
+                            <Route path="/admin" element={<AdminDashboard />} >
+                                <Route path="dashboard" element={<Dashboard />} />
+                                <Route path="properties" element={<PropertiesDashboard />} />
+                                <Route path="estate-agents" element={<EstateAgentsDashboard />} />
+                                <Route path="edit-property/:id" element={<EditProperty />} />
+                                <Route path="add-property" element={<AddProperty />} />
+                            </Route>
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>                           
+                    </ScrollToTop>                        
                 </main>
                 <Footer />
             </div>            

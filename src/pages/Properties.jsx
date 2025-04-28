@@ -1,15 +1,19 @@
 import { useState, useContext, useRef, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import SimpleHeader from '../components/SimpleHeader';
 import PropertyCard from '../components/PropertyCard';
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 import { PropertiesContext } from '../context/properties';
-import { SlidersHorizontal, X, ArrowLeft, ArrowRight } from 'lucide-react';
+import { SlidersHorizontal, X, ArrowLeft, ArrowRight, PlusIcon, MinusIcon } from 'lucide-react';
 import ReactPaginate from "react-paginate";
 
 export default function Properties() {
     const { properties, loading, error } = useContext(PropertiesContext);
 
     const [filterMenuOpen, setFilterMenuOpen] = useState(false);
+    const [searchParams] = useSearchParams();
+    const searchQuery = searchParams.get("search")?.toLowerCase() || "";
+    const showSoldProperties = searchParams.get("sold") === "true";
 
     const listingsRef = useRef(null);
 
@@ -19,11 +23,13 @@ export default function Properties() {
         minBathrooms: 0,
         maxBathrooms: 0,
         minPrice: 0,
-        maxPrice: ""
+        maxPrice: "",
+        showSoldProperties: showSoldProperties ? true : false
     };
 
     const [filters, setFilters] = useState(initialFilters);
-    const [sortOption, setSortOption] = useState("");
+    const [sortOption, setSortOption] = useState("date-asc");
+    const [showAdditionalFilters, setShowAdditionalFilters] = useState(showSoldProperties);
 
     const filteredProperties = (properties || [])
     .filter(property => 
@@ -32,13 +38,20 @@ export default function Properties() {
         (!filters.minBathrooms || property.property.details.bathrooms >= filters.minBathrooms) &&
         (!filters.maxBathrooms || property.property.details.bathrooms <= filters.maxBathrooms) &&
         (!filters.minPrice || property.property.price.amount >= filters.minPrice) &&
-        (!filters.maxPrice || property.property.price.amount <= filters.maxPrice)
+        (!filters.maxPrice || property.property.price.amount <= filters.maxPrice)  &&
+        (!searchQuery || matchesSearch(property, searchQuery)) &&
+        (filters.showSoldProperties || !property.property.details.status?.toLowerCase().includes('sold'))
+
     )
     .sort((a, b) => {
         if (sortOption === 'price-asc') {
             return a.property.price.amount - b.property.price.amount;
         } else if (sortOption === 'price-desc') {
             return b.property.price.amount - a.property.price.amount;
+        } else if (sortOption === 'date-asc') {
+            return new Date(a.property.listing_date) - new Date(b.property.listing_date);
+        } else if (sortOption === 'date-desc') {
+            return new Date(b.property.listing_date) - new Date(a.property.listing_date);
         } else {
             return 0;
         }
@@ -51,15 +64,48 @@ export default function Properties() {
     const endIndex = startIndex + n;
     const currentProperties = filteredProperties.slice(startIndex, endIndex);
 
+    /**
+     * Checks if a property matches the given search term.
+     * @param {Object} property - The property object to search within.
+     * @param {string} term - The search term to look for.
+     * @returns {boolean} True if the search term is found in the property details, false otherwise.
+     */
+    function matchesSearch(property, term) {
+        const searchTerm = term.toLowerCase();
+        const { address, details } = property.property;
+    
+        // Fields to be searched
+        const searchableFields = [
+            address.house_name_number,
+            address.street_name,
+            address.district,
+            address.town,
+            address.county,
+            address.postcode_1,
+            details.property_type,
+            details.description,
+            details.bedrooms,
+            details.bathrooms,
+            details.reception_rooms
+        ];
+      
+        // Concatenate and lowercase all searchable fields
+        const searchableText = searchableFields.join(" ").toLowerCase();
+      
+        // Check if the search term is present
+        return searchableText.includes(searchTerm);
+    }
 
     const toggleFilterMenu = () => {
         setFilterMenuOpen(prev => !prev);
     };
 
     const handleFilters = (e, field) => {
+        const { type, checked, value } = e.target;
+
         setFilters(prev => ({
             ...prev,
-            [field]: Number(e.target.value),  // Ensure numeric comparison
+            [field]: type === 'checkbox' ? checked : Number(value),
         }));
     };
 
@@ -73,7 +119,7 @@ export default function Properties() {
 
     useEffect(() => {
         setPage(0);
-      }, [filters, sortOption]);
+      }, [filters, sortOption, searchQuery]);
 
     return (
         <div className='pb-10'>
@@ -103,6 +149,8 @@ export default function Properties() {
                             <div className='sortWrapper border rounded-md flex items-center'>
                                 <select id="sortSelect" className='h-full px-2 py-1 rounded-md text-sm overflow-hidden' onChange={(e) => handleSort(e.target.value)}>
                                     <option value="">Sort By</option>
+                                    <option value="date-asc">Date added: soonest</option>
+                                    <option value="date-desc">Date added: latest</option>
                                     <option value="price-asc">Price: Low to High</option>
                                     <option value="price-desc">Price: High to Low</option>
                                 </select>   
@@ -110,8 +158,8 @@ export default function Properties() {
                   
                         </div>
 
-                        {currentProperties.map((property) => (
-                            <PropertyCard key={property.id} property={property} />
+                        {currentProperties.map((property, index) => (
+                            <PropertyCard key={property.id || index} property={property} />
                         ))}
                         </div>
                         {filteredProperties.length > n && (
@@ -169,7 +217,7 @@ export default function Properties() {
                                     </div>
                                 </div>
                                 <div className='inputWrapper border px-2 py-1 rounded-md col-span-2 lg:col-span-1'>
-                                    <label for="maxBedroomsFilter" className="block mb-0.5 text-[10px] font-medium text-gray-700">Maximum</label>
+                                    <label htmlFor="maxBedroomsFilter" className="block mb-0.5 text-[10px] font-medium text-gray-700">Maximum</label>
                                     <div className='selectWrapper'>
                                         <select id="maxBedroomsFilter" className="w-full" onChange={(e) => handleFilters(e, "maxBedrooms")} value={filters.maxBedrooms}>
                                             <option value="0">Any</option>
@@ -261,6 +309,26 @@ export default function Properties() {
                                             <option value="475000">£475,000</option>
                                             <option value="500000">£500,000</option>
                                         </select>  
+                                    </div>
+                                </div>
+                                <div className={`col-span-2 mt-4`}>
+                                    <button 
+                                        className='flex items-center justify-between w-full group'
+                                        onClick={() => setShowAdditionalFilters(!showAdditionalFilters)}
+                                    >
+                                        <p className='text-sm'>Additional filters</p>
+                                        <span className='block group-hover:text-complement-deep colour-ease'>
+                                            <PlusIcon size={20} className={`${!showAdditionalFilters ? 'block' : 'hidden'}`}/>
+                                            <MinusIcon size={20} className={`${showAdditionalFilters ? 'block' : 'hidden'}`}/>                                            
+                                        </span>
+
+                                    
+                                    </button>
+                                    <div className={`${showAdditionalFilters ? 'flex flex-col items-center' : 'hidden'}`}>
+                                        <div className='w-full flex justify-between items-center mt-2 pt-2 border-t border-solid border-gray-200'>
+                                            <label className="block mb-0.5 text-xs font-medium text-gray-700">Show Sold Properties</label>
+                                            <input onChange={(e) => handleFilters(e, "showSoldProperties")} checked={filters.showSoldProperties} type='checkbox' className='h-4 w-4 accent-complement-medium'/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -100,7 +100,13 @@ export default function PropertyCard({property}) {
                                     key={index}
                                     className='bg-gray-200'
                                 >
-                                    <img className="h-full w-full object-cover" src={media.url} alt="" />
+                                    <img 
+                                    className="h-full w-full object-cover" 
+                                    src={media.url}
+                                    alt="" 
+                                    loading={index === 0 ? 'eager' : 'lazy'}
+                                    />
+                                    <div class="swiper-lazy-preloader"></div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -145,7 +151,7 @@ export default function PropertyCard({property}) {
                     </div>
                     {property.property.listing_date && (
                         <div>
-                            <p className='text-sm line-clamp-1 font-medium text-primary'>Added on {property.property.listing_date}</p>
+                            <p className='text-sm line-clamp-1 font-medium text-gray-600'>Added on {property.property.listing_date}</p>
                         </div>                        
                     )}
 

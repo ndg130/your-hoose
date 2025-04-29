@@ -15,6 +15,8 @@ export default function Properties() {
     const searchQuery = searchParams.get("search")?.toLowerCase() || "";
     const showSoldProperties = searchParams.get("sold") === "true";
 
+    const searchPeriod = searchParams.get("period") || "all";
+   
     const listingsRef = useRef(null);
 
     const initialFilters = {
@@ -24,12 +26,20 @@ export default function Properties() {
         maxBathrooms: 0,
         minPrice: 0,
         maxPrice: "",
-        showSoldProperties: showSoldProperties ? true : false
+        showSoldProperties: showSoldProperties ? true : false,
+        period: searchPeriod === "all" ? 0 : searchPeriod
     };
 
     const [filters, setFilters] = useState(initialFilters);
     const [sortOption, setSortOption] = useState("date-asc");
     const [showAdditionalFilters, setShowAdditionalFilters] = useState(showSoldProperties);
+
+    const calculatePeriodDate = (period) => {
+        const periodInDays = period || 0;
+        const periodDate = new Date();
+        periodDate.setDate(periodDate.getDate() - periodInDays);
+        return periodDate; // Return the calculated Date object
+    }
 
     const filteredProperties = (properties || [])
     .filter(property => 
@@ -40,8 +50,8 @@ export default function Properties() {
         (!filters.minPrice || property.property.price.amount >= filters.minPrice) &&
         (!filters.maxPrice || property.property.price.amount <= filters.maxPrice)  &&
         (!searchQuery || matchesSearch(property, searchQuery)) &&
-        (filters.showSoldProperties || !property.property.details.status?.toLowerCase().includes('sold'))
-
+        (filters.showSoldProperties || !property.property.details.status?.toLowerCase().includes('sold')) &&
+        (!filters.period || new Date (property.property.listing_date) >= calculatePeriodDate(filters.period))
     )
     .sort((a, b) => {
         if (sortOption === 'price-asc') {
@@ -70,7 +80,7 @@ export default function Properties() {
      * @param {string} term - The search term to look for.
      * @returns {boolean} True if the search term is found in the property details, false otherwise.
      */
-    function matchesSearch(property, term) {
+    const matchesSearch = (property, term) => {
         const searchTerm = term.toLowerCase();
         const { address, details } = property.property;
     
@@ -95,6 +105,8 @@ export default function Properties() {
         // Check if the search term is present
         return searchableText.includes(searchTerm);
     }
+
+
 
     const toggleFilterMenu = () => {
         setFilterMenuOpen(prev => !prev);

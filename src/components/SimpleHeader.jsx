@@ -5,7 +5,7 @@ export default function SimpleHeader({subheaderText, headerText, description, st
         <section className={`header-component ${style} relative px-6 py-24 sm:py-32 lg:px-8`}>
             {backgroundImage && (
                 <div className='absolute inset-0 w-full h-full z-0 opacity-30'>
-                    <img src={backgroundImage} className='h-full w-full object-cover'/>
+                    <img src={backgroundImage} className='h-full w-full object-cover' alt=''/>
                 </div>                
             )}
 

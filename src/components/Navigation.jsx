@@ -52,6 +52,7 @@ export default function Navigation() {
                     <ul className="flex flex-col gap-y-2">
                         <li><Link to={`/properties`} onClick={closeMenu}>For sale</Link></li>
                         <li><Link to={`/properties`} onClick={closeMenu}>To rent</Link></li>
+                        <li><Link to={`/properties?period=30`} onClick={closeMenu}>New listings</Link></li>
                     </ul>
                 </nav>
             </div>

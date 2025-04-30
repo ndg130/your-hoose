@@ -12,6 +12,7 @@ import PropertyListingSkeleton from '../components/Skeletons/PropertyListingSkel
 
 import { PropertiesContext } from '../context/properties';
 import { EstateAgentsContext } from '../context/estateAgents';
+import PropertyMap from '../components/PropertyMap';
 
 export default function PropertyListing() {
 
@@ -147,9 +148,19 @@ export default function PropertyListing() {
                                 )}
                             </div>
 
-                            <div>
-                              
-                            </div>
+                            {property && (
+                                <div className='mt-20'>
+                                    <h3 className='text-xl font-medium text-accent-dark mb-3'>{property.property.address.house_name_number !== "" && property.property.address.house_name_number != "undefined" && property.property.address.house_name_number != "N/A" && property.property.address.house_name_number != "Not specified"  
+                                    ? property.property.address.house_name_number + ', ' 
+                                    : "" 
+                                }
+                                {property.property.address.street_name !== "" ? property.property.address.street_name + ', ' : "" }
+                                {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
+                                {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }</h3>
+                                <p className='text-base text-gray-700 mb-3'>View the property on the map below:</p>
+                                    <PropertyMap latitude={property.property.address.latitude} longitude={property.property.address.longitude}/>
+                                </div>
+                            )}   
                         </div>
                         <aside className='hidden lg:block lg:col-span-2 relative w-[21.875rem]'>
                             <div className='sticky top-[10px]'>
@@ -187,8 +198,10 @@ export default function PropertyListing() {
                     </>
                 ) : (
                     <p>Loading property details...</p>
-                )}                
+                )}            
             </div>
+
+            
         </div>
         {property && lightBoxVisible && (
             <LightBox 

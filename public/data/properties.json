@@ -11,7 +11,9 @@
                 "town":"Rowlands Gill",
                 "county":"County Durham",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.94309439177169,
+                "longitude": -1.7815639713261902
              },
              "price":{
                 "amount":1000000,
@@ -211,7 +213,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":"1BQ"
+                "postcode_2":"1BQ",
+                "latitude": 54.931799070748724,
+                "longitude": -1.7368193233779476
              },
              "price":{
                 "amount":775000,
@@ -475,7 +479,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.90006367148348, 
+                "longitude": -1.7814899655006171
              },
              "price":{
                 "amount":700000,
@@ -675,7 +681,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.93470658336042, 
+                "longitude": -1.7301039375731204
              },
              "price":{
                 "amount":700000,
@@ -879,7 +887,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.9029598981465, 
+                "longitude": -1.7816381322104575
              },
              "price":{
                 "amount":700000,
@@ -1087,7 +1097,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne And Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.9227174134859, 
+                "longitude": -1.7748459471863887
              },
              "price":{
                 "amount":695000,
@@ -1252,7 +1264,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.93239387363681, 
+                "longitude": -1.7334643977348392
              },
              "price":{
                 "amount":685000,
@@ -1410,7 +1424,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":"2PU"
+                "postcode_2":"2PU",
+                "latitude": 54.924352621800914, 
+                "longitude": -1.7460082469333322
              },
              "price":{
                 "amount":675000,
@@ -1546,7 +1562,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.91915605193674, 
+                "longitude": -1.7519815208604068
              },
              "price":{
                 "amount":585000,
@@ -1732,7 +1750,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.92694802840964, 
+                "longitude": -1.7401873935740777
              },
              "price":{
                 "amount":575000,
@@ -1856,7 +1876,9 @@
                 "town":"Rowlands Gill",
                 "county":"County Durham",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.90009754069136, 
+                "longitude": -1.774786591002147
              },
              "price":{
                 "amount":575000,
@@ -1970,7 +1992,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.90065486915861, 
+                "longitude": -1.7865020937692664
              },
              "price":{
                 "amount":575000,
@@ -2171,10 +2195,12 @@
                 "town":"Gateshead",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":"2BX"
+                "postcode_2":"2BX",
+                "latitude": 54.93436045611639, 
+                "longitude": -1.7808121926959775
              },
              "price":{
-                "amount":"Coming Soon",
+                "amount": 494995,
                 "frequency":"sale",
                 "qualifier":""
              },
@@ -2306,7 +2332,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.92186617328053, 
+                "longitude": -1.7655865441671048
              },
              "price":{
                 "amount":475000,
@@ -2400,7 +2428,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.91857836326954, 
+                "longitude": -1.7467596099638103
              },
              "price":{
                 "amount":475000,
@@ -2553,7 +2583,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.9383314818287, 
+                "longitude": -1.7297946195268215
              },
              "price":{
                 "amount":400000,
@@ -2700,7 +2732,9 @@
                 "town":"Gateshead",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":"2BX"
+                "postcode_2":"2BX",
+                "latitude": 54.92819390291428, 
+                "longitude": -1.7751252980807464
              },
              "price":{
                 "amount":384995,
@@ -2792,7 +2826,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":"2JJ"
+                "postcode_2":"2JJ",
+                "latitude": 54.926934288026054,
+                "longitude": -1.7444141281545908
              },
              "price":{
                 "amount":375000,
@@ -2984,7 +3020,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.91543258221674, 
+                "longitude": -1.7553863037768316
              },
              "price":{
                 "amount":365000,
@@ -3140,7 +3178,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.932337310995855, 
+                "longitude": -1.733554645582776
              },
              "price":{
                 "amount":350000,
@@ -3264,7 +3304,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.929641631340886, 
+                "longitude": -1.78268565654785
              },
              "price":{
                 "amount":330000,
@@ -3408,7 +3450,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.930778686724516, 
+                "longitude": -1.7826981509693618
              },
              "price":{
                 "amount":330000,
@@ -3564,7 +3608,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.92623397311471, 
+                "longitude": -1.7435553339203993
              },
              "price":{
                 "amount":325000,
@@ -3680,7 +3726,9 @@
                 "town":"Rowlands Gill",
                 "county":"Tyne and Wear",
                 "postcode_1":"NE39",
-                "postcode_2":""
+                "postcode_2":"",
+                "latitude": 54.92944241803366, 
+                "longitude": -1.7383494693540542
              },
              "price":{
                 "amount":325000,
@@ -3795,7 +3843,9 @@
             "town": "Rowlands Gill",
             "county": "Tyne and Wear",
             "postcode_1": "NE39",
-            "postcode_2": ""
+            "postcode_2": "",
+            "latitude": 54.92589300394543, 
+            "longitude": -1.7435817047831716
           },
           "price": {
             "amount": 325000,
@@ -3954,7 +4004,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.9350321995571, 
+                "longitude": -1.730251959342786
               },
               "price": {
                 "amount": 325000,
@@ -4110,7 +4162,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92778020208237, 
+                "longitude": -1.7411473759780645
               },
               "price": {
                 "amount": 315000,
@@ -4230,7 +4284,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93411232617368, 
+                "longitude": -1.7293406663878041
               },
               "price": {
                 "amount": 260000,
@@ -4312,7 +4368,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93114635493496, 
+                "longitude": -1.7825492384494706
               },
               "price": {
                 "amount": 260000,
@@ -4444,7 +4502,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93524167334987, 
+                "longitude": -1.7847334060920415
               },
               "price": {
                 "amount": 245000,
@@ -4584,7 +4644,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93625017804903, 
+                "longitude": -1.7838323625002146
               },
               "price": {
                 "amount": 240000,
@@ -4680,7 +4742,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.926550,
+                "longitude": -1.744343
               },
               "price": {
                 "amount": 235000,
@@ -4821,7 +4885,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93397745121885, 
+                "longitude": -1.729308305343997
               },
               "price": {
                 "amount": 230000,
@@ -4913,7 +4979,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": "2HR"
+                "postcode_2": "2HR",
+                "latitude": 54.93588097297782, 
+                "longitude": -1.7827507044896735
               },
               "price": {
                 "amount": 230000,
@@ -5023,7 +5091,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92230226188386, 
+                "longitude": -1.7640813382372558
               },
               "price": {
                 "amount": 225000,
@@ -5149,7 +5219,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92806574719143, 
+                "longitude": -1.7405366388650616
               },
               "price": {
                 "amount": 250000,
@@ -5295,7 +5367,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92942985033012, 
+                "longitude": -1.7803989418545174
               },
               "price": {
                 "amount": 220000,
@@ -5447,7 +5521,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.91822122450261, 
+                "longitude": -1.7603103208710233
               },
               "price": {
                 "amount": 220000,
@@ -5545,7 +5621,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.933824583149026, 
+                "longitude": -1.780599866563656
               },
               "price": {
                 "amount": 210000,
@@ -5661,7 +5739,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92769983092979, 
+                "longitude": -1.7819183345688623
               },
               "price": {
                 "amount": 210000,
@@ -5746,7 +5826,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.9278609560597, 
+                "longitude": -1.7818616546915964
               },
               "price": {
                 "amount": 200000,
@@ -5846,7 +5928,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92709111188167, 
+                "longitude": -1.7411934626805192
               },
               "price": {
                 "amount": 200000,
@@ -5926,7 +6010,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92897341391553, 
+                "longitude": -1.7439253512980541
               },
               "price": {
                 "amount": 200000,
@@ -6011,7 +6097,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.93446571037858, 
+                "longitude": -1.7807337893101467
               },
               "price": {
                 "amount": 197500,
@@ -6146,7 +6234,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92914654748018, 
+                "longitude": -1.738009569078398
               },
               "price": {
                 "amount": 190000,
@@ -6252,7 +6342,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.921144227117466, 
+                "longitude": -1.7407243024624026
               },
               "price": {
                 "amount": 170000,
@@ -6371,7 +6463,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.934298432548054, 
+                "longitude": -1.7826728542343628
               },
               "price": {
                 "amount": 150000,
@@ -6422,7 +6516,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.926672186430494, 
+                "longitude": -1.7472625746191466
               },
               "price": {
                 "amount": 140000,
@@ -6542,7 +6638,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92183882055048, 
+                "longitude": -1.7373408157912944
               },
               "price": {
                 "amount": 140000,
@@ -6626,7 +6724,9 @@
                 "town": "Rowlands Gill",
                 "county": "Tyne and Wear",
                 "postcode_1": "NE39",
-                "postcode_2": ""
+                "postcode_2": "",
+                "latitude": 54.92164318510752, 
+                "longitude": -1.739589869133399
               },
               "price": {
                 "amount": 125000,

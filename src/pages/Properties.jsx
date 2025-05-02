@@ -4,8 +4,9 @@ import SimpleHeader from '../components/SimpleHeader';
 import PropertyCard from '../components/PropertyCard';
 import PropertyCardSkeleton from '../components/Skeletons/PropertyCardSkeleton';
 import { PropertiesContext } from '../context/properties';
-import { SlidersHorizontal, X, ArrowLeft, ArrowRight, PlusIcon, MinusIcon } from 'lucide-react';
+import { SlidersHorizontal, X, ArrowLeft, ArrowRight, PlusIcon, MinusIcon, MapPin } from 'lucide-react';
 import ReactPaginate from "react-paginate";
+import MultiPropertyMap from '../components/MultiPropertyMap';
 
 export default function Properties() {
     const { properties, loading, error } = useContext(PropertiesContext);
@@ -33,6 +34,7 @@ export default function Properties() {
     const [filters, setFilters] = useState(initialFilters);
     const [sortOption, setSortOption] = useState("date-asc");
     const [showAdditionalFilters, setShowAdditionalFilters] = useState(showSoldProperties);
+    const [multiPropertyMapVisible, setMultiPropertyMapVisible] = useState(false);
 
     const calculatePeriodDate = (period) => {
         const periodInDays = period || 0;
@@ -154,25 +156,32 @@ export default function Properties() {
                     ) : filteredProperties.length > 0 ? (
                     <>
                         <div ref={listingsRef} className='flex flex-col gap-y-5 max-w-5xl flex-1 px-4 lg:px-0'>
-                        <div className='flex justify-between'>
-                            <p className='sticky top-0 left-0 w-full lg:w-[101%] bg-neutral-light py-3 z-50'>
-                                Showing <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}
-                            </p>
-                            <div className='sortWrapper border rounded-md flex items-center'>
-                                <select id="sortSelect" className='h-full px-2 py-1 rounded-md text-sm overflow-hidden' onChange={(e) => handleSort(e.target.value)}>
-                                    <option value="">Sort By</option>
-                                    <option value="date-asc">Date added: soonest</option>
-                                    <option value="date-desc">Date added: latest</option>
-                                    <option value="price-asc">Price: Low to High</option>
-                                    <option value="price-desc">Price: High to Low</option>
-                                </select>   
-                            </div>
-                  
-                        </div>
+                            <div className='flex flex-col xs:flex-row justify-between'>
+                                <p className='sticky top-0 left-0 w-full lg:w-[101%] bg-neutral-light py-3 z-50'>
+                                    <span className='hidden sm:inline-block'>Showing</span> <span className='font-semibold'>{filteredProperties.length}</span> {filteredProperties.length === 1 ? 'property' : 'properties'}
+                                </p>
+                                <div className='flex justify-between'>
+                                    <button className='flex items-center whitespace-nowrap mr-3 group' onClick={() => setMultiPropertyMapVisible(!multiPropertyMapVisible)}>
+                                        <span className='group-hover:text-complement-medium colour-ease text-sm sm:text-base'>Map</span>
+                                        <span className='hidden sm:inline-block px-1 group-hover:text-complement-medium colour-ease '>view</span> 
+                                        <MapPin size={22} className='text-complement-medium'/>
+                                    </button>
+                                    <div className='sortWrapper border rounded-md flex items-center'>
+                                        <select id="sortSelect" className='h-full px-2 py-1 rounded-md text-sm overflow-hidden' onChange={(e) => handleSort(e.target.value)}>
+                                            <option value="">Sort By</option>
+                                            <option value="date-asc">Date added: soonest</option>
+                                            <option value="date-desc">Date added: latest</option>
+                                            <option value="price-asc">Price: Low to High</option>
+                                            <option value="price-desc">Price: High to Low</option>
+                                        </select>   
+                                    </div>                                    
+                                </div>
 
-                        {currentProperties.map((property, index) => (
-                            <PropertyCard key={property.id || index} property={property} />
-                        ))}
+                            </div>
+
+                            {currentProperties.map((property, index) => (
+                                <PropertyCard key={property.id || index} property={property} />
+                            ))}
                         </div>
                         {filteredProperties.length > n && (
                             <ReactPaginate
@@ -359,6 +368,7 @@ export default function Properties() {
                     </div>
                 </div>
             </div>
+            <MultiPropertyMap properties={filteredProperties} multiPropertyMapVisible={multiPropertyMapVisible} setMultiPropertyMapVisible={setMultiPropertyMapVisible}/>
         </div>
     );
 }

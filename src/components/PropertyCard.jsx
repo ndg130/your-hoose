@@ -106,7 +106,7 @@ export default function PropertyCard({property}) {
                                     alt="" 
                                     loading={index === 0 ? 'eager' : 'lazy'}
                                     />
-                                    <div class="swiper-lazy-preloader"></div>
+                                    <div className="swiper-lazy-preloader"></div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -120,7 +120,7 @@ export default function PropertyCard({property}) {
                 </div>
             </div>
             <div className='px-5 pt-5 flex flex-col justify-between'>
-                <Link to={`/properties/${property.property.id}`}className='group h-full'>
+                <Link to={`/properties/${property.property.id}`} className='group h-full'>
                     {property && (
                         <div className='flex flex-col md:flex-row justify-between gap-y-1 md:gap-y-0 md:items-center'>
                             <h2>

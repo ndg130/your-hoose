@@ -100,7 +100,7 @@ export default function PropertyListing() {
                                 {property.property.address.postcode_1 !== "" ? property.property.address.postcode_1 + ' ' : "" }
                                 {property.property.address.postcode_2 !== "" ? property.property.address.postcode_2 + ' ' : "" }
                             </h1>
-                            <div className='flex'>
+                            <div className='flex pb-4'>
                                 <div className='w-full'>
                                     {property.property.price.qualifier !== "" && (
                                         <p className='capitalize text-xs font-medium text-gray-600'>{property.property.price.qualifier}</p>
